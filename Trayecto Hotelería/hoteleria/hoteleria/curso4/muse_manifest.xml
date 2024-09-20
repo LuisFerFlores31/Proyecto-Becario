@@ -1,0 +1,131 @@
+<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1421390567965">
+  <folder name="css">
+    <file name="site_global.css" crc="121847476"/>
+    <file name="master_master-curso-naranja.css" crc="11101549" ref="index"/>
+    <file name="master_slides.css" crc="4209842428" ref="autodiagnostico:reflexion:recomendaciones:recomendaciones2:introduccion:autoevaluacion:portafolio:conclusion"/>
+    <file name="autodiagnostico.css" crc="3939253615" ref="autodiagnostico"/>
+    <file name="reflexion.css" crc="4149359392" ref="reflexion"/>
+    <file name="recomendaciones.css" crc="100351864" ref="recomendaciones"/>
+    <file name="recomendaciones2.css" crc="3938619415" ref="recomendaciones2"/>
+    <file name="introduccion.css" crc="107814511" ref="introduccion"/>
+    <file name="autoevaluacion.css" crc="199978816" ref="autoevaluacion"/>
+    <file name="portafolio.css" crc="3866084760" ref="portafolio"/>
+    <file name="conclusion.css" crc="4035818157" ref="conclusion"/>
+    <file name="index.css" crc="377071340" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="museutils.js" crc="4050293121" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="jquery.watch.js" crc="3946357177" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="pie.js" crc="3827607177" ref="index:introduccion:recomendaciones:portafolio:recomendaciones2"/>
+    <file name="webpro.js" crc="140723489" ref="index:recomendaciones:portafolio:recomendaciones2"/>
+    <file name="musewpslideshow.js" crc="4170221289" ref="index:recomendaciones:portafolio:recomendaciones2"/>
+    <file name="jquery.museoverlay.js" crc="439400757" ref="index:recomendaciones:portafolio:recomendaciones2"/>
+    <file name="touchswipe.js" crc="321465556" ref="index:recomendaciones:portafolio:recomendaciones2"/>
+    <file name="jquery.scrolleffects.js" crc="398671634" ref="introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+  </folder>
+  <folder name="images">
+    <file name="logo-nmp-crop-u6883.png" crc="4258766053" ref="index"/>
+    <file name="cubomorado.png" crc="198073980" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="logo-cva.png" crc="4228320625" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="logo-nmp-crop-u6887.png" crc="409476843" ref="index"/>
+    <file name="pasted image 177x58.jpg" crc="300359560" ref="index"/>
+    <file name="portadas-curso-04.jpg" crc="3852066599" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="u6734.png" crc="126597722" ref="index"/>
+    <file name="u6734-r.png" crc="4115746023" ref="index"/>
+    <file name="u6735-20.png" crc="4057661146" ref="index"/>
+    <file name="cubo-morado.png" crc="3985738680" ref="index"/>
+    <file name="logo-nmp-crop-u6920.png" crc="4258766053" ref="introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="pasted image 177x582.jpg" crc="300359560" ref="introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="logo-nmp-crop-u6924.png" crc="409476843" ref="introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="u962-4.png" crc="4043281091" ref="introduccion"/>
+    <file name="u6479-4.png" crc="4039265114" ref="introduccion"/>
+    <file name="u6483-7.png" crc="4271364126" ref="introduccion"/>
+    <file name="u6489-4.png" crc="4162364929" ref="introduccion"/>
+    <file name="pasted image 403x432.jpg" crc="531073480" ref="introduccion"/>
+    <file name="gg-01.png" crc="369421573" ref="introduccion"/>
+    <file name="u6490-10.png" crc="3862880161" ref="introduccion"/>
+    <file name="pasted image 381x351.jpg" crc="290219888" ref="introduccion"/>
+    <file name="u6504-22.png" crc="4022842612" ref="introduccion"/>
+    <file name="u6549-4.png" crc="3838199445" ref="introduccion"/>
+    <file name="u6550-4.png" crc="388241553" ref="introduccion"/>
+    <file name="u6557-6.png" crc="233794020" ref="introduccion"/>
+    <file name="u6551-4.png" crc="470799303" ref="introduccion"/>
+    <file name="u6554-4.png" crc="3977221605" ref="introduccion"/>
+    <file name="u6552-4.png" crc="93732896" ref="introduccion"/>
+    <file name="u6555-4.png" crc="4186559226" ref="introduccion"/>
+    <file name="u6553-4.png" crc="361280351" ref="introduccion"/>
+    <file name="u6556-4.png" crc="4287672595" ref="introduccion"/>
+    <file name="flechamorada.jpg" crc="4204389496" ref="introduccion:conclusion:autoevaluacion:recomendaciones:reflexion:portafolio:autodiagnostico:recomendaciones2"/>
+    <file name="u6542_states.png" crc="127574210" ref="introduccion"/>
+    <file name="u6542_states-r.png" crc="383814376" ref="introduccion"/>
+    <file name="pasted image 461x576.jpg" crc="4176105013" ref="conclusion"/>
+    <file name="u6569-14.png" crc="317609038" ref="conclusion"/>
+    <file name="u6570-8.png" crc="185489253" ref="conclusion"/>
+    <file name="u6578_states.png" crc="127574210" ref="conclusion"/>
+    <file name="u6578_states-r.png" crc="383814376" ref="conclusion"/>
+    <file name="u4655-4.png" crc="413167909" ref="autoevaluacion"/>
+    <file name="u5337-25.png" crc="4232680912" ref="autoevaluacion"/>
+    <file name="pasted image 352x79.jpg" crc="249353136" ref="autoevaluacion"/>
+    <file name="u6442_states.png" crc="127574210" ref="autoevaluacion"/>
+    <file name="u6442_states-r.png" crc="383814376" ref="autoevaluacion"/>
+    <file name="u4747-4.png" crc="4279846480" ref="recomendaciones"/>
+    <file name="u6394-33.png" crc="431686280" ref="recomendaciones"/>
+    <file name="u6392-27.png" crc="58698631" ref="recomendaciones"/>
+    <file name="u6396-11.png" crc="3823565526" ref="recomendaciones"/>
+    <file name="u6384-4.png" crc="6562853" ref="recomendaciones"/>
+    <file name="u6385-4.png" crc="3890236279" ref="recomendaciones"/>
+    <file name="u6386-4.png" crc="447396420" ref="recomendaciones"/>
+    <file name="pasted image 975x56.jpg" crc="423005185" ref="recomendaciones"/>
+    <file name="u6450_states.png" crc="127574210" ref="recomendaciones"/>
+    <file name="u6450_states-r.png" crc="383814376" ref="recomendaciones"/>
+    <file name="u4748-4.png" crc="81305627" ref="reflexion"/>
+    <file name="u4693-4.png" crc="3856546589" ref="reflexion"/>
+    <file name="pasted image 212x361.jpg" crc="404905907" ref="reflexion"/>
+    <file name="u4692-4.png" crc="3799980388" ref="reflexion"/>
+    <file name="pasted image 352x792.jpg" crc="32307957" ref="reflexion"/>
+    <file name="u6452_states.png" crc="127574210" ref="reflexion"/>
+    <file name="u6452_states-r.png" crc="383814376" ref="reflexion"/>
+    <file name="u6179-38.png" crc="4161311735" ref="portafolio"/>
+    <file name="u4749-4.png" crc="47845336" ref="portafolio"/>
+    <file name="pasted image 388x297.jpg" crc="415493356" ref="portafolio"/>
+    <file name="u5057-4.png" crc="4121472999" ref="portafolio"/>
+    <file name="u5147_states.png" crc="147849691" ref="portafolio"/>
+    <file name="u5147_states-r.png" crc="461914877" ref="portafolio"/>
+    <file name="u5147_states-m.png" crc="461914877" ref="portafolio"/>
+    <file name="u5871-4.png" crc="489518363" ref="portafolio"/>
+    <file name="u6454_states.png" crc="127574210" ref="portafolio"/>
+    <file name="u6454_states-r.png" crc="383814376" ref="portafolio"/>
+    <file name="u5303-4.png" crc="186869300" ref="autodiagnostico"/>
+    <file name="u6300-4.png" crc="118109323" ref="autodiagnostico"/>
+    <file name="u6301-9.png" crc="3950466550" ref="autodiagnostico"/>
+    <file name="u6302-4.png" crc="3881905014" ref="autodiagnostico"/>
+    <file name="u6305-9.png" crc="77441466" ref="autodiagnostico"/>
+    <file name="u6304-4.png" crc="4193959497" ref="autodiagnostico"/>
+    <file name="u6306-8.png" crc="38071574" ref="autodiagnostico"/>
+    <file name="u6307-4.png" crc="3985206637" ref="autodiagnostico"/>
+    <file name="pasted image 352x793.jpg" crc="4159314995" ref="autodiagnostico"/>
+    <file name="u6456_states.png" crc="127574210" ref="autodiagnostico"/>
+    <file name="u6456_states-r.png" crc="383814376" ref="autodiagnostico"/>
+    <file name="u6662-8.png" crc="178103140" ref="recomendaciones2"/>
+    <file name="pasted image 1137x507.jpg" crc="4229696255" ref="recomendaciones2"/>
+    <file name="u6656-8.png" crc="191008760" ref="recomendaciones2"/>
+    <file name="pasted image 1137x707.jpg" crc="4053472045" ref="recomendaciones2"/>
+    <file name="u6592-8.png" crc="236016366" ref="recomendaciones2"/>
+    <file name="u6598-4.png" crc="204690709" ref="recomendaciones2"/>
+    <file name="pasted image 736x311.jpg" crc="503193669" ref="recomendaciones2"/>
+    <file name="u6599-4.png" crc="75856490" ref="recomendaciones2"/>
+    <file name="u6602_states.png" crc="127574210" ref="recomendaciones2"/>
+    <file name="u6602_states-r.png" crc="383814376" ref="recomendaciones2"/>
+  </folder>
+  <file name="index.html" crc="4178673152" mt="1421390154699" redirect="true"/>
+  <file name="introduccion.html" crc="4162713651" mt="1421390207541" redirect="true"/>
+  <file name="conclusion.html" crc="355385855" mt="1421390207542" redirect="true"/>
+  <file name="autoevaluacion.html" crc="3765013720" mt="1421390207542" redirect="true"/>
+  <file name="recomendaciones.html" crc="4221970640" mt="1421390207543" redirect="true"/>
+  <file name="reflexion.html" crc="4070704145" mt="1421390207544" redirect="true"/>
+  <file name="portafolio.html" crc="3989901441" mt="1421390207544" redirect="true"/>
+  <file name="autodiagnostico.html" crc="183215819" mt="1421390207545" redirect="true"/>
+  <file name="recomendaciones2.html" crc="4250082118" mt="1421390207546" redirect="true"/>
+</manifest>

@@ -1,0 +1,39 @@
+#u6541
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+}
+
+#u551
+{
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+	position: relative;
+	border-width: 0px 0px 1px;
+}
+
+#u6382-4
+{
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	color: #B63B6A;
+	text-align: right;
+	position: relative;
+}
+
+#u6321,#u6959
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u6920,#u6924,#u6918
+{
+	background-color: transparent;
+	position: fixed;
+}
+

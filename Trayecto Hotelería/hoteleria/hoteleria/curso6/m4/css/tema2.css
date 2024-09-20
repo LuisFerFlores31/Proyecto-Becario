@@ -1,0 +1,327 @@
+.version.tema2 /* version checker */
+{
+	color: #0000ED;
+	background-color: #22C42F;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1016px;
+	min-height: 600px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -36px;
+	padding-bottom: 5px;
+}
+
+#pu561
+{
+	width: 0.01px;
+	margin-left: -100px;
+}
+
+#u561
+{
+	z-index: 2;
+	padding-bottom: 6px;
+}
+
+#u561_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1016px;
+	left: -100px;
+}
+
+#u1092
+{
+	z-index: 11;
+	width: 500px;
+	margin-right: -10000px;
+	margin-top: 13px;
+	left: 17px;
+}
+
+#u1128
+{
+	z-index: 15;
+	width: 177px;
+	margin-right: -10000px;
+	margin-top: 19px;
+	left: 130px;
+}
+
+#u1090
+{
+	z-index: 9;
+	width: 218px;
+	margin-right: -10000px;
+	margin-top: 21px;
+	left: 390px;
+}
+
+#u568-4
+{
+	z-index: 5;
+	width: 366px;
+	margin-right: -10000px;
+	margin-top: 23px;
+	left: 730px;
+}
+
+#u566
+{
+	z-index: 3;
+	width: 76px;
+	margin-right: -10000px;
+	margin-top: 6px;
+	left: 1116px;
+}
+
+#u561-bw
+{
+	z-index: 2;
+	height: 84px;
+}
+
+#u1096
+{
+	z-index: 13;
+	width: 78px;
+	margin-right: -10000px;
+	margin-top: 17px;
+	left: 313px;
+}
+
+#u1096_img
+{
+	margin-right: -1px;
+}
+
+#u504
+{
+	z-index: 17;
+	border-color: #000000;
+	background-color: #F6772C;
+}
+
+#u504_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1016px;
+	position: relative;
+	left: -100px;
+	padding-top: 41px;
+	padding-bottom: 162px;
+}
+
+#u1006
+{
+	z-index: 22;
+	width: 412px;
+	background-color: transparent;
+	left: 766px;
+	position: relative;
+}
+
+#u505-4
+{
+	z-index: 18;
+	width: 679px;
+	background-color: transparent;
+	font-size: 60px;
+	line-height: 72px;
+	color: #FFFFFF;
+	left: 100px;
+	margin-top: 164px;
+	position: relative;
+}
+
+#u504-bw
+{
+	z-index: 17;
+	margin-top: 8px;
+	height: 499px;
+}
+
+#u702-5
+{
+	z-index: 33;
+	display: block;
+	vertical-align: top;
+	left: -62px;
+	margin-top: 24px;
+	position: relative;
+}
+
+#u708
+{
+	z-index: 38;
+	width: 1158px;
+	background-color: transparent;
+	left: -62px;
+	margin-top: 25px;
+	position: relative;
+}
+
+#u713-10
+{
+	z-index: 40;
+	display: block;
+	vertical-align: top;
+	left: -63px;
+	margin-top: 22px;
+	position: relative;
+}
+
+#u719-5
+{
+	z-index: 52;
+	display: block;
+	vertical-align: top;
+	left: -61px;
+	margin-top: 60px;
+	position: relative;
+}
+
+#u714
+{
+	z-index: 50;
+	width: 786px;
+	background-color: transparent;
+	margin-left: 115px;
+	margin-top: 24px;
+	position: relative;
+}
+
+#u720-10
+{
+	z-index: 57;
+	display: block;
+	vertical-align: top;
+	left: -61px;
+	margin-top: 22px;
+	position: relative;
+}
+
+#u721-4
+{
+	z-index: 67;
+	display: block;
+	vertical-align: top;
+	margin-left: 403px;
+	margin-top: 52px;
+	position: relative;
+}
+
+#u724
+{
+	z-index: 71;
+	width: 331px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-left: 349px;
+	margin-top: 17px;
+	position: relative;
+}
+
+#u722
+{
+	z-index: 72;
+	width: 331px;
+	border-color: #000000;
+	background-color: #B63B6A;
+	padding-bottom: 11px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u723-4
+{
+	z-index: 73;
+	position: relative;
+	width: 328px;
+	margin-right: -10000px;
+	margin-top: 11px;
+	left: 3px;
+}
+
+#u723-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u700-6
+{
+	z-index: 24;
+	width: 324px;
+	min-height: 22px;
+	font-style: normal;
+	left: -60px;
+	margin-top: 36px;
+	position: relative;
+	background: transparent url("../images/flechamorada.jpg") no-repeat left center;
+}
+
+#u700-4
+{
+	padding-left: 30px;
+}
+
+#u700-2
+{
+	color: #B63B6A;
+}
+
+#u701
+{
+	z-index: 31;
+	left: -60px;
+	margin-top: 8px;
+	position: relative;
+	background: url("../images/u701_states.png") no-repeat 0px 0px;
+}
+
+#u701_states
+{
+	height: 49px;
+	width: 155px;
+	vertical-align: top;
+}
+
+#u701:hover #u701_states
+{
+	background: url("../images/u701_states-r.png") no-repeat 0px 0px;
+}
+
+body
+{
+	position: relative;
+	min-width: 1016px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

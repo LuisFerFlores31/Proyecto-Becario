@@ -1,0 +1,47 @@
+#u6914
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+}
+
+#u6541
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u551
+{
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+	position: relative;
+	border-width: 0px 0px 1px;
+}
+
+#u6382-4
+{
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	color: #B63B6A;
+	text-align: right;
+	position: relative;
+}
+
+#u6321,#u7009
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u6970,#u6974,#u6968
+{
+	background-color: transparent;
+	position: fixed;
+}
+

@@ -1,0 +1,348 @@
+.version.tema2 /* version checker */
+{
+	color: #000005;
+	background-color: #742E01;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1016px;
+	min-height: 600px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -36px;
+	padding-bottom: 62px;
+}
+
+#pu561
+{
+	width: 0.01px;
+	margin-left: -100px;
+}
+
+#u561
+{
+	z-index: 2;
+	padding-bottom: 6px;
+}
+
+#u561_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1016px;
+	left: -100px;
+}
+
+#u960
+{
+	z-index: 11;
+	width: 500px;
+	margin-right: -10000px;
+	margin-top: 13px;
+	left: 17px;
+}
+
+#u1075
+{
+	z-index: 15;
+	width: 177px;
+	margin-right: -10000px;
+	margin-top: 19px;
+	left: 130px;
+}
+
+#u958
+{
+	z-index: 9;
+	width: 218px;
+	margin-right: -10000px;
+	margin-top: 21px;
+	left: 390px;
+}
+
+#u568-4
+{
+	z-index: 5;
+	width: 388px;
+	margin-right: -10000px;
+	margin-top: 23px;
+	left: 708px;
+}
+
+#u566
+{
+	z-index: 3;
+	width: 76px;
+	margin-right: -10000px;
+	margin-top: 6px;
+	left: 1116px;
+}
+
+#u561-bw
+{
+	z-index: 2;
+	height: 84px;
+}
+
+#u964
+{
+	z-index: 13;
+	width: 78px;
+	margin-right: -10000px;
+	margin-top: 17px;
+	left: 313px;
+}
+
+#u964_img
+{
+	margin-right: -1px;
+}
+
+#u504
+{
+	z-index: 17;
+	border-color: #000000;
+	background-color: #F6772C;
+	padding-bottom: 267px;
+}
+
+#u504_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1016px;
+	position: relative;
+	left: -100px;
+}
+
+#u505-4
+{
+	z-index: 18;
+	width: 610px;
+	background-color: transparent;
+	font-size: 60px;
+	line-height: 72px;
+	color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 160px;
+	left: 120px;
+}
+
+#u894
+{
+	z-index: 76;
+	width: 412px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 41px;
+	left: 766px;
+}
+
+#u504-bw
+{
+	z-index: 17;
+	margin-top: 8px;
+	height: 232px;
+}
+
+#u717-4
+{
+	z-index: 22;
+	display: block;
+	vertical-align: top;
+	margin-left: 9px;
+	margin-top: 127px;
+	position: relative;
+}
+
+#u718-4
+{
+	z-index: 26;
+	display: block;
+	vertical-align: top;
+	left: -75px;
+	margin-top: 26px;
+	position: relative;
+}
+
+#u852
+{
+	z-index: 74;
+	width: 1174px;
+	background-color: transparent;
+	left: -75px;
+	margin-top: 13px;
+	position: relative;
+}
+
+#u719-6
+{
+	z-index: 30;
+	display: block;
+	vertical-align: top;
+	left: -75px;
+	margin-top: 13px;
+	position: relative;
+}
+
+#u720-4
+{
+	z-index: 36;
+	display: block;
+	vertical-align: top;
+	margin-left: 99px;
+	margin-top: 207px;
+	position: relative;
+}
+
+#u721-4
+{
+	z-index: 40;
+	display: block;
+	vertical-align: top;
+	left: -34px;
+	margin-top: 15px;
+	position: relative;
+}
+
+#u908
+{
+	z-index: 78;
+	width: 980px;
+	background-color: transparent;
+	margin-left: 36px;
+	margin-top: 15px;
+	position: relative;
+}
+
+#u722-11
+{
+	z-index: 44;
+	display: block;
+	vertical-align: top;
+	left: -34px;
+	margin-top: 25px;
+	position: relative;
+}
+
+#u723-4
+{
+	z-index: 55;
+	display: block;
+	vertical-align: top;
+	margin-left: 300px;
+	position: relative;
+}
+
+#u728
+{
+	z-index: 65;
+	width: 357px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-left: 300px;
+	margin-top: 24px;
+	position: relative;
+}
+
+#u724
+{
+	z-index: 66;
+	width: 357px;
+	border-color: #000000;
+	background-color: #B63B6A;
+	padding-bottom: 3px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u725-4
+{
+	z-index: 67;
+	position: relative;
+	width: 340px;
+	margin-right: -10000px;
+	margin-top: 3px;
+	left: 9px;
+}
+
+#u725-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u726-6
+{
+	z-index: 59;
+	width: 324px;
+	min-height: 22px;
+	font-style: normal;
+	left: -34px;
+	margin-top: 45px;
+	position: relative;
+	background: transparent url("../images/flechamorada.jpg") no-repeat left center;
+}
+
+#u726-4
+{
+	padding-left: 30px;
+}
+
+#u726-2
+{
+	color: #B63B6A;
+}
+
+#u727
+{
+	z-index: 72;
+	left: -34px;
+	margin-top: 31px;
+	position: relative;
+	background: url("../images/u727_states.png") no-repeat 0px 0px;
+}
+
+#u727_states
+{
+	height: 49px;
+	width: 155px;
+	vertical-align: top;
+}
+
+#u727:hover #u727_states
+{
+	background: url("../images/u727_states-r.png") no-repeat 0px 0px;
+}
+
+body
+{
+	position: relative;
+	min-width: 1016px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+
