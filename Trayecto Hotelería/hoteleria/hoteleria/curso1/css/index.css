@@ -188,7 +188,7 @@
 	left: 504px;
 }
 
-#u6697
+/*#u6697
 {
 	z-index: 100;
 	width: 216px;
@@ -218,7 +218,7 @@
 	height: 44px;
 	min-height: 0px;
 	margin: 0px;
-}
+}*/
 
 #u6675
 {
@@ -419,45 +419,6 @@
 	opacity: 0.01;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
-}
-
-#u6707
-{
-	position: absolute;
-	width: 30px;
-	border-style: none;
-	border-color: transparent;
-	background-color: #C4C4C4;
-	padding-bottom: 5px;
-	top: -727px;
-	left: 1666px;
-}
-
-#u6707:hover
-{
-	background-color: #999999;
-	margin: 0px;
-}
-
-#u6707:active
-{
-	background-color: #6B6B6B;
-	margin: 0px;
-}
-
-#u6708-4
-{
-	z-index: 146;
-	width: 20px;
-	min-height: 20px;
-	line-height: 20px;
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 5px;
-	left: 5px;
 }
 
 .PamphletWidget .ThumbGroup .Thumb, .PamphletNextButton, .PamphletPrevButton, .PamphletCloseButton /* pamphlet2 */
@@ -1147,48 +1108,6 @@
 	margin: 73px -10000px 0px 0px;
 }
 
-#u6783
-{
-	z-index: 14;
-	width: 204px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #B63B6A;
-	background-color: #FFFFFF;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-khtml-border-radius: 10px;
-	border-radius: 10px;
-	margin-left: 406px;
-	top: -41px;
-	margin-bottom: -38px;
-	position: relative;
-}
-
-#u6669-4
-{
-	z-index: 87;
-	width: 190px;
-	min-height: 30px;
-	line-height: 22px;
-	text-align: center;
-	font-size: 18px;
-	color: #B63B6A;
-	font-weight: bold;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 6px;
-	left: 6px;
-}
-
-#u6669-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 30px;
-	margin: 6px -10000px 0px 0px;
-}
-
 #u6671-4
 {
 	z-index: 95;
@@ -1231,6 +1150,7 @@
 body
 {
 	padding-top: 10px;
+	
 }
 
 #page .verticalspacer
