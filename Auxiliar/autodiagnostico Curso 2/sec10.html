@@ -35,7 +35,7 @@ function isCorrect() {
       if (radios[i].type === 'radio' && radios[i].checked) {
           // get value, set checked flag or do whatever you need to
           radios[i].parentElement.classList.add('correct');       
-          results[i].innerHTML= 'Correcto. Ser especifico es vital para que los integrantes de soporte técnico puedan llegar a la causa raíz de la falla del equipo y solucionarla.<br/>';
+          results[i].innerHTML= '<strong>Correcto.</strong> ¡Exactamente! Si te actualizas, modernizas y utilizas las nuevas tecnologías en beneficio de tu hotel obtendrás un ahorro en los costos.<br/>';
       } else {
           radios[i].parentElement.classList.remove('correct');
           radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ function isIncorrect() {
       if (radios[i].type === 'radio' && radios[i].checked) {
           // get value, set checked flag or do whatever you need to
           radios[i].parentElement.classList.add('incorrect');
-          results[i].innerHTML= 'Incorrecto. La respuesta correcta es “ser especifico”. Para que los integrantes de soporte técnico tengan los datos y la información suficiente para solucionar los problemas es importante que menciones la mayor cantidad de detalles posibles en el reporte de falla de equipo.<br/>';
+          results[i].innerHTML= '<strong>Incorrecto.</strong> ¡Cuidado!, recuerda que la actualización, modernización y utilizar las tecnologías en beneficio de tu hotel te traerán ahorro en los costos, si no de actualizas la empresa empieza a decaer y puede llegar a la quiebra.<br/>';
           
       } else {
           radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">10. ¿Cuál es la actitud más importante para elaborar los reportes de falla de los equipos?</span></h6>
+                      <h6><span name="G01question">10. Una empresa que no se actualiza constantemente:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Ser entusiasta<br /><span class="message"></span>
+                          a) Ahorra mucho dinero.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Ser especifico<br /><span class="message"></span>
+                            b) Se queda rezagada y empieza a decaer.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Ser honesto<br /><span class="message"></span>
+                              c) Sigue con los procesos establecidos.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Ser servicial<br /><span class="message"></span>
+                                d) Recibe apoyo de gobierno para seguir trabajando así.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">

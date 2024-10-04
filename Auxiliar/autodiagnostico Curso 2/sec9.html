@@ -35,7 +35,7 @@ function isCorrect() {
       if (radios[i].type === 'radio' && radios[i].checked) {
           // get value, set checked flag or do whatever you need to
           radios[i].parentElement.classList.add('correct');       
-          results[i].innerHTML= 'Correcto. El soporte técnico es el nombre que se le da a la persona o grupo de personas encargadas de solucionar las dudas o fallas que se presenten en los equipos de oficina.<br/>';
+          results[i].innerHTML= '<strong>Correcto.</strong> Muy bien, la renta de las instalaciones, el pago de los servicios públicos como  luz, agua, etc, las cortesía que se ofrecen, alimentos y bebidas, mantenimiento de mobiliario y equipo son algunas de las áreas en donde se ve reflejado el gasto de los hoteles.<br/>';
       } else {
           radios[i].parentElement.classList.remove('correct');
           radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ function isIncorrect() {
       if (radios[i].type === 'radio' && radios[i].checked) {
           // get value, set checked flag or do whatever you need to
           radios[i].parentElement.classList.add('incorrect');
-          results[i].innerHTML= 'Incorrecto. La respuesta correcta es “soporte técnico”. Esta es la denominación correcta para la persona o grupo de personas que trabajan en una organización y que son los responsables de atender y solucionar las fallas que se presenten en los equipos de la oficina, ayudándole al usuario a aprender lo necesario para operar el equipo de forma adecuada.<br/>';
+          results[i].innerHTML= '<strong>Incorrecto.</strong> Analiza, en tu respuesta hay gastos que no le corresponden al hotel, como viajes de los dueños ni fiestas privadas. Recuerda que la renta de las instalaciones, el pago de los servicios públicos como  luz, agua, etc., las cortesías que se ofrecen, alimentos y bebidas, mantenimiento de mobiliario y equipo son algunas de las áreas en donde se ve reflejado el gasto de los hoteles.<br/>';
           
       } else {
           radios[i].parentElement.classList.remove('correct');
@@ -172,21 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">9. Tiene como principal objetivo auxiliar al usuario de los equipos a que resuelvan el problema por sí mismo:</span></h6>
+                      <h6><span name="G01question">9. Los gastos dentro de una empresa de hospedaje se dan en:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Soporte técnico<br /><span class="message"></span>
+                          a) Renta de instalaciones, Servicios públicos, cortesías.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Equipo de programación<br /><span class="message"></span>
+                            b) Compras, viajes de dueños, alimentos y bebidas.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Expertos en equipos<br /><span class="message"></span>
+                              c) Mobiliario, mantenimiento, fiestas privadas.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) 
-                                Solucionadores de fallas<br /><span class="message"></span>
+                                d) Reuniones académicas, servicios públicos, regalos.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
