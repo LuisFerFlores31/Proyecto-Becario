@@ -28,35 +28,35 @@ parent.nav.setTimes(document.URL, G01.time, G01.timeLimit);
 parent.nav.setScores(document.URL, G01.score);
 }
 function isCorrect() {
-var radios = document.getElementsByName('G01RadioInp');
-var results = document.getElementsByClassName('message');
-var value;
-for (var i = 0; i < radios.length; i++) {
-    if (radios[i].type === 'radio' && radios[i].checked) {
-        // get value, set checked flag or do whatever you need to
-        radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> ¡Perfecto! En conjunto contigo venden tus servicios y productos.<br/>';
-    } else {
-        radios[i].parentElement.classList.remove('correct');
-        radios[i].parentElement.classList.remove('incorrect');
-    }
-}
+  var radios = document.getElementsByName('G01RadioInp');
+  var results = document.getElementsByClassName('message');
+  var value;
+  for (var i = 0; i < radios.length; i++) {
+      if (radios[i].type === 'radio' && radios[i].checked) {
+          // get value, set checked flag or do whatever you need to
+          radios[i].parentElement.classList.add('correct');       
+          results[i].innerHTML= '<strong>Correcto.</strong> Una visita de un cliente representa algo formal, pues además de evaluar los sistemas, procesos y calidad del negocio, también evalúan el servicio. Es importante que un cliente se lleve la mejor impresión del negocio para que la relación proveedor-cliente sea la mejor.<br/>';
+      } else {
+          radios[i].parentElement.classList.remove('correct');
+          radios[i].parentElement.classList.remove('incorrect');
+      }
+  }
 }
 function isIncorrect() {
-var radios = document.getElementsByName('G01RadioInp');
-var results = document.getElementsByClassName('message');
-var value;
-for (var i = 0; i < radios.length; i++) {
-    if (radios[i].type === 'radio' && radios[i].checked) {
-        // get value, set checked flag or do whatever you need to
-        radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> No manejan tu sitio, manejan el suyo, no son sistemas de cómputo, ni te ayudan con proveedores.<br/>';
-        
-    } else {
-        radios[i].parentElement.classList.remove('correct');
-        radios[i].parentElement.classList.remove('incorrect');
-    }
-}
+  var radios = document.getElementsByName('G01RadioInp');
+  var results = document.getElementsByClassName('message');
+  var value;
+  for (var i = 0; i < radios.length; i++) {
+      if (radios[i].type === 'radio' && radios[i].checked) {
+          // get value, set checked flag or do whatever you need to
+          radios[i].parentElement.classList.add('incorrect');
+          results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “formal”. La visita de un cliente es formal debido a que son personas externas a la empresa, y de ellos dependen los ingresos para el negocio. Deben ser atendidos de la mejor manera posible pues es importante mantener una buena y cordial relación con ellos.<br/>';
+          
+      } else {
+          radios[i].parentElement.classList.remove('correct');
+          radios[i].parentElement.classList.remove('incorrect');
+      }
+  }
 }
 //Deshabilitar los botones en la Evaluacion
 // Se usan estos IDs para conservar el script del hover creado por Fireworks
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">4. ¿Qué es un agente de viajes?</span></h6>
+                      <h6><span name="G01question">4. Cuando asiste un cliente a una visita en el negocio es una visita:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Detallistas que venden productos de viaje a clientes<br /><span class="message"></span>
+                          a) Formal<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Personas que manejan tu sitio web<br /><span class="message"></span>
+                            b) Común<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Sistema de hardware y software de computación<br /><span class="message"></span>
+                              c) Informal<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Agentes que te ayudan a escoger tus proveedores<br /><span class="message"></span>
+                                d) Elegante<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
@@ -210,12 +210,12 @@ html, body, #bg {
                         G01.am('cond','Correct_01','G01.correct == true',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isCorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Safari es un navegador de internet.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Una visita de un cliente representa algo formal, pues además de evaluar los sistemas, procesos y calidad del negocio, también evalúan el servicio. Es importante que un cliente se lleve la mejor impresión del negocio para que la relación proveedor-cliente sea la mejor.\')','');
                         G01.am('end');
                         G01.am('cond','Incorrect_','G01.correct == (false)',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isIncorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “Safari”. Las demás opciones sí son motores de búsqueda.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “formal”. La visita de un cliente es formal debido a que son personas externas a la empresa, y de ellos dependen los ingresos para el negocio. Deben ser atendidos de la mejor manera posible pues es importante mantener una buena y cordial relación con ellos.\')','');
                         G01.am('end');
                         G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
                         G01.am('actn','Popup Message','MM_popupMsg(\'Debes seleccionar una opción.\')','');

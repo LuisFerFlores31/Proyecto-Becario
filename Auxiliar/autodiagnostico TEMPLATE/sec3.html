@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>¡Bien!,</strong> Una meta etiqueta llamada metatask proporciona información sobre una página web.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Si un en un sitio web te ofrecen premios y dinero al instante, eso indica casi siempre que es un sitio web inseguro.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> No es estrategia de ventas, no atrae a usuarios a tu sitio y no obtiene información da información.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “te ofrecen dinero y premios al instante”. Las demás opciones corresponden a un sitio web seguro.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">2. ¿Qué es una meta etiqueta?</span></h6>
+                      <h6><span name="G01question">3. Todas las siguientes enunciados hablan de un sitio web seguro, EXCEPTO:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Es una estrategia de ventas por línea<br /><span class="message"></span>
+                          a) La dirección comienza con http.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Proporcionan información sobre una página web específica<br /><span class="message"></span>
+                            b) Te ofrece dinero y premios al instante.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Es una forma de atraer usuarios a el sitio<br /><span class="message"></span>
+                              c) Es un sitio conocido por mucha gente.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Revisa el sitio para obtener información<br /><span class="message"></span>
+                                d) Tiene un logo de certificado de seguridad.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
@@ -210,12 +210,12 @@ html, body, #bg {
                         G01.am('cond','Correct_01','G01.correct == true',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isCorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Las computadoras portátiles se distinguen por poder trabajar con una batería recargable, sin necesidad de conectarse a la electricidad.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Si un en un sitio web te ofrecen premios y dinero al instante, eso indica casi siempre que es un sitio web inseguro.\')','');
                         G01.am('end');
                         G01.am('cond','Incorrect_','G01.correct == (false)',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isIncorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “funcionan con batería recargable”. Las demás opciones corresponden a un servidor de almacenaje o a una computadora de escritorio.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “te ofrecen dinero y premios al instante”. Las demás opciones corresponden a un sitio web seguro.\')','');
                         G01.am('end');
                         G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
                         G01.am('actn','Popup Message','MM_popupMsg(\'Debes seleccionar una opción.\')','');

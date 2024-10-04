@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> ¡Excelente! Es la opción para encontrar hospedaje en línea.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Una hoja de cálculo no está diseñada para hacer dibujos creativos a mano alzada. Para eso hay otras herramientas como "Paint".<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> No verifica en línea tu hotel, ni lo monitores, no es la forma de navegación de tu página.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “dibujar a mano alzada”. Aunque la aplicación permite la inserción de gráficos y dibujos, no está hecha para eso.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">7. ¿Qué es un portal de reservación en línea?</span></h6>
+                      <h6><span name="G01question">6. NO es una función de una hoja de cálculo:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Es la forma de verificar en línea tu hotel.<br /><span class="message"></span>
+                          a) Realizar presupuestos<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Es una forma de monitorear la página web.<br /><span class="message"></span>
+                            b) Controlar inventarios<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Es una opción que existe en Internet para poder encontrar hospedaje.<br /><span class="message"></span>
+                              c) Dibujar a mano alzada<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Navegar en tu página web.<br /><span class="message"></span>
+                                d) Hacer listas de clientes<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
@@ -210,12 +210,12 @@ html, body, #bg {
                         G01.am('cond','Correct_01','G01.correct == true',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isCorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Hacer clic en la celda donde quieres que se vea el resultado, es el primer paso. Si invades una celda con datos, puedes perder información.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Una hoja de cálculo no está diseñada para hacer dibujos creativos a mano alzada. Para eso hay otras herramientas como "Paint".\')','');
                         G01.am('end');
                         G01.am('cond','Incorrect_','G01.correct == (false)',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isIncorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “hacer clic en la celda donde quieres que se vea el resultado”. Las demás opciones no te sirven para iniciar con un cálculo.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “dibujar a mano alzada”. Aunque la aplicación permite la inserción de gráficos y dibujos, no está hecha para eso.\')','');
                         G01.am('end');
                         G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
                         G01.am('actn','Popup Message','MM_popupMsg(\'Debes seleccionar una opción.\')','');
