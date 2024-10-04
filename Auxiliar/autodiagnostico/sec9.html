@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Al residir en un servidor, se puede manipular sólo desde una computadora con el software instalado, con lo cual, el usuario no tiene toda la movilidad que tiene un usuario de correo tipo web, el cual puede consultar su mail desde cualquier dispositivo con internet.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> ¡Perfecto! Una buena página debe ser nítida y sencilla de navegar.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “el correo reside en una computadora”. Las demás opciones se consideran ventajas del correo POP.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Los demás son partes de la distribución de una página.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,21 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">9. ¿Cuál de las siguientes es una posible desventaja de los correos electrónicos tipo POP?</span></h6>
+                      <h6><span name="G01question">9. ¿Cuál de las siguientes es una característica de una buena página web?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Puedes enviarlos a cualquier hora<br /><span class="message"></span>
+                          a) Encabezado<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Llegan rápidamente al destinatariol<br /><span class="message"></span>
+                            b) Navegación<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) El correo reside en un servidor<br /><span class="message"></span>
+                              c) Nítido y sencillo<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) 
-                                Puedes incluir archivos en el correo<br /><span class="message"></span>
+                                d) Pie<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">

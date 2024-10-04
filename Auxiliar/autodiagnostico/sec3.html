@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Si un en un sitio web te ofrecen premios y dinero al instante, eso indica casi siempre que es un sitio web inseguro.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Efectivamente, la generación X son quienes se inclinan más por la comodidad y el buen servicio.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “te ofrecen dinero y premios al instante”. Las demás opciones corresponden a un sitio web seguro.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Recuerda que la generación X son quienes se inclinan más por la comodidad y el buen servicio.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">3. Todas las siguientes enunciados hablan de un sitio web seguro, EXCEPTO:</span></h6>
+                      <h6><span name="G01question">3. En tendencia para reservar viajes, ¿Qué generación se inclina más por la comodidad y el buen servicio?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) La dirección comienza con http.<br /><span class="message"></span>
+                          a) Baby Boomers<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Te ofrece dinero y premios al instante.<br /><span class="message"></span>
+                            b) Generación X<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Es un sitio conocido por mucha gente.<br /><span class="message"></span>
+                              c) Generación Y<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Tiene un logo de certificado de seguridad.<br /><span class="message"></span>
+                                d) Adultos contemporáneos<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">

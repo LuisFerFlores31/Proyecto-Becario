@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> El hardware de una computadora se compone por los elementos que se pueden mover o tocar; algunos ejemplos son: monitor, teclado, ratón (mouse), CPU y bocinas.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> ¡Perfecto! SEO es también conocida como orgánica o natural.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto</strong>. La respuesta correcta es “hardware”. Las demás opciones no agrupan adecuadamente al conjunto de dispositivos mencionado.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto</strong>. XML es un archivo de mapas de sitio, URL es para nombrar recursos en Internet, PPC es Pay per  Click, que no es una búsqueda orgánica.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
             <div class="body-nest">
               <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                 <div name="G01Layer">
-                  <h6><span name="G01question">1. Monitor, teclado, ratón, CPU y bocinas son parte del:</span></h6>
+                  <h6><span name="G01question">1. ¿A qué se le conoce como una búsqueda natural u orgánica?</span></h6>
                   <form name="G01choices">
                     <span name="G01choice1">
                       <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                      a) Software<br /><span class="message"></span>
+                      a) XML<br /><span class="message"></span>
                     </span> <span name="G01choice2">
                         <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                        b) MS Office<br /><span class="message"></span>
+                        b) URL<br /><span class="message"></span>
                         </span> <span name="G01choice3">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                          c) Hardware<br /><span class="message"></span>
+                          c) SEO<br /><span class="message"></span>
                           </span> <span name="G01choice4">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                            d) Internet<br /><span class="message"></span>
+                            d) PPC<br /><span class="message"></span>
                             </span><br />
                   </form>
                   <form name="G01controls">

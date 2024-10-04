@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Normalmente se utiliza CC, a menos que tu jefe te indique específicamente otra cosa (por ejemplo: CCO, para que nadie vea que incluyes a tu jefe)<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> ¡Muy bien!  El PPC es el motor de búsqueda más rápido para orientar a los clientes.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es “CC”. Las demás opciones cumplen otros propósitos. El campo CCO pudiera ser adecuado únicamente si tu jefe te lo pide así explícitamente, si no, no es correcto que lo utilices.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Son características del motor de búsqueda SEO.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">8. Para enviar un correo a un cliente y al mismo tiempo tener enterado a tu jefe, lo adecuado es incluir a tu jefe en:</span></h6>
+                      <h6><span name="G01question">8. ¿Cuál de las siguientes es una característica del motor de búsqueda PPC?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Campo "para"<br /><span class="message"></span>
+                          a) Tarda tiempo de efecto en los resultados<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Campo "CCO"<br /><span class="message"></span>
+                            b) Difícil efecto en los resultados<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Campo "asunto"<br /><span class="message"></span>
+                              c) Gratuito<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Campo "CC"<br /><span class="message"></span>
+                                d) Manera rápida y efectiva de orientar a clientes potenciales<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
