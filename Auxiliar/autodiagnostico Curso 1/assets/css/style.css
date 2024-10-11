@@ -167,7 +167,7 @@ img.ikon {
     width: 100%;
 }
 #ticker li {
-    color: #1abc9c;
+    color: #B63B6A;
     font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size: 80px;
     padding: 22px;
@@ -186,7 +186,7 @@ img.ikon {
 .ticker2 li {
     font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size: 60px;
-    color:#1abc9c;
+    color:#B63B6A;
 }
 #fade {
     font-weight: normal;
@@ -240,7 +240,7 @@ img.ikon {
     height:80px!important;
 }
 #jalur li {
-    color: #1abc9c;
+    color: #B63B6A;
     font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size: 210px;
     margin: 0;
@@ -252,7 +252,8 @@ img.ikon {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     border: 1px solid #000000;
     border-radius: 5px 5px 5px 5px;
-    color: #1abc9c;
+    color: #B63B6A
+;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px !important;
     font-weight: bold;
@@ -287,7 +288,7 @@ img.ikon {
 }
 .clock-ticker {
     border-left: 8px solid #062358;
-    background:#1abc9c;
+    background:#B63B6A;
     bottom: 0;
     height: 45px;
     position: fixed;
@@ -465,7 +466,7 @@ ul.newsticker span {
     /*  box-shadow:0px 5px 0 #fff; */
 }
 .progress-bg {
-    background:#1abc9c
+    background:#B63B6A
     /* rgba(255, 255, 255, 0.5) */
     ;
     border-radius:5px;
