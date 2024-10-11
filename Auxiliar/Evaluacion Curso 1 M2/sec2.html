@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Hacer una lluvia de ideas sin importar lo difícil o absurdo que suene te permite abrir la mente a nuevos productos y servicios, además puedes involucrar a alguien de confianza como amigos, familia, o vecinos para que te ayuden a generar más ideas.<br/>';
+        results[i].innerHTML= '<strong>¡Bien!,</strong> ¡Buen trabajo! Estos viajes a menudo son para propósitos de recreación / vacaciones (37%) o para visitar amigos y familiares (34%).<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es "hacer lluvia de ideas". Creer que todo está dicho, pensar que es una tarea para una sola persona o pensar que no naciste con el don de ser creativo son ideas incorrectas acerca de la creatividad.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> No fueron mencionados los viajes por propósitos laborales o emergencias como viajes planificados en línea.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -58,7 +58,6 @@ for (var i = 0; i < radios.length; i++) {
     }
 }
 }
-
 //Deshabilitar los botones en la Evaluacion
 // Se usan estos IDs para conservar el script del hover creado por Fireworks
 //top.frames["nav"].document.images["btnSiguiente"].style.visibility = "hidden"; // Bot&oacute;n exit
@@ -173,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">2. Es uno de los trucos que facilita la propuesta de ideas creativas en el diseño de productos o servicios:</span></h6>
+                      <h6><span name="G01question">2. Del 66% de viajes planificados en línea, ¿cuál es el tipo de viaje más solicitado?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Creer que todo está dicho.<br /><span class="message"></span>
+                          a) Visitar amigos y familiares<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Hacer una lluvia de ideas.<br /><span class="message"></span>
+                            b) Recreación / vacaciones<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Pensar que es una tarea para una sola persona.<br /><span class="message"></span>
+                              c) Propósitos laborales<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Pensar que no naciste con el don de ser creativo.<br /><span class="message"></span>
+                                d) Viajes por emergencias<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
@@ -211,12 +210,12 @@ html, body, #bg {
                         G01.am('cond','Correct_01','G01.correct == true',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isCorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Hacer una lluvia de ideas sin importar lo difícil o absurdo que suene te permite abrir la mente a nuevos productos y servicios, además puedes involucrar a alguien de confianza como amigos, familia, o vecinos para que te ayuden a generar más ideas.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Las computadoras portátiles se distinguen por poder trabajar con una batería recargable, sin necesidad de conectarse a la electricidad.\')','');
                         G01.am('end');
                         G01.am('cond','Incorrect_','G01.correct == (false)',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isIncorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es "hacer lluvia de ideas". Creer que todo está dicho, pensar que es una tarea para una sola persona o pensar que no naciste con el don de ser creativo son ideas incorrectas acerca de la creatividad.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “funcionan con batería recargable”. Las demás opciones corresponden a un servidor de almacenaje o a una computadora de escritorio.\')','');
                         G01.am('end');
                         G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
                         G01.am('actn','Popup Message','MM_popupMsg(\'Debes seleccionar una opción.\')','');
