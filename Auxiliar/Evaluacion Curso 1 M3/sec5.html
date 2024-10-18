@@ -20,7 +20,7 @@ function initPage() {
 	MM_setIntProps('G01.setDisabled(true);');
  } else {
 	navBar.setTries(document.URL, 0)
-	}
+ }
 }
 function updateQuiz() {
 parent.nav.setTries(document.URL, G01.tries);
@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> ¡Excelente! Un canal en línea es un portal de viajes ya que requerimos del Internet para poder hacer uso de este servicio.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Evitar ofrecer el producto o servicio no es una ventaja si se requiere en la comunidad.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto</strong>. La agencia de viajes corresponde a un canal no en línea mientras que la llamada telefónica no fue mencionada como un canal.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es "evitar ofrecer el producto o servicio en tu negocio". Incrementar tus habilidades personales, supervisar a otros que realizan el producto o servicio o capacitar a tus colaboradores son ventajas que nacen de la capacitación para aprender a hacer un producto o servicio tú mismo.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -144,7 +144,6 @@ html, body, #bg {
 .incorrect{
   color: red;
 }
-
 </style>
 
 
@@ -170,35 +169,37 @@ html, body, #bg {
         <!-- LABEL -->
         <div class="nest">
             <div class="body-nest">
-              <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
-                <div name="G01Layer">
-                  <h6><span name="G01question">1. ¿Cuál de las siguientes opciones es un canal en línea para buscar un hotel?</span></h6>
-                  <form name="G01choices">
-                    <span name="G01choice1">
-                      <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                      a) Portal de Viajes<br /><span class="message"></span>
-                    </span> <span name="G01choice2">
-                        <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                        b) Llamada telefónica<br /><span class="message"></span>
-                        </span> <span name="G01choice3">
-                          <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                          c) Agencia de viajes<br /><span class="message"></span>
-                          </span> <span name="G01choice4">
-                            <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                            d) Otros<br /><span class="message"></span>
-                            </span><br />
-                  </form>
-                  <form name="G01controls">
-                  </form>
-                </div>
-                <script language="JavaScript">
+                <section id="flip-scroll">
+                  <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
+                    <div name="G01Layer">
+                      <h6><span name="G01question">5. NO es una ventaja de aprender a hacer tú mismo un producto o servicio que se requiere en la comunidad:</span></h6>
+                      <form name="G01choices">
+                        <span name="G01choice1">
+                          <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
+                          a) Incrementar tus habilidades personales.<br /><span class="message"></span>
+                        </span> <span name="G01choice2">
+                            <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
+                            b) Supervisar a otros que realizan el producto o servicio.<br /><span class="message"></span>
+                            </span> <span name="G01choice3">
+                              <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
+                              c) Evitar ofrecer el producto o servicio en tu negocio.<br /><span class="message"></span>
+                              </span> <span name="G01choice4">
+                                <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
+                                d) 
+                                Capacitar a tus colaboradores.<br /><span class="message"></span>
+                                </span><br />
+                      </form>
+                      <form name="G01controls">
+                      </form>
+                    </div>
+                    <script language="JavaScript">
                     <!--
                       // Copyright 1998,1999 Macromedia, Inc. All rights reserved.
                       function newG01() {
-                        G01 = new MM_interaction('G01',1,0,0,null,0,3,0,'','','c','',0);
-                        G01.add('inpt','choice1',0,1,1,10);
+                        G01 = new MM_interaction('G01',1,0,0,null,0,2,0,'','','c','',0);
+                        G01.add('inpt','choice1',0,1,0,0);
                         G01.add('inpt','choice2',0,1,0,0);
-                        G01.add('inpt','choice3',0,1,0,0);
+                        G01.add('inpt','choice3',0,1,1,10);
                         G01.add('inpt','choice4',0,1,0,0);
                         G01.init();
                         G01.am('segm','Segment: Check Time_',1,0);
@@ -210,12 +211,12 @@ html, body, #bg {
                         G01.am('cond','Correct_01','G01.correct == true',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isCorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. El hardware de una computadora se compone por los elementos que se pueden mover o tocar; algunos ejemplos son: monitor, teclado, ratón (mouse), CPU y bocinas.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Correcto. Evitar ofrecer el producto o servicio no es una ventaja si se requiere en la comunidad.\')','');
                         G01.am('end');
                         G01.am('cond','Incorrect_','G01.correct == (false)',0);
                         G01.am('actn','Call JavaScript','MM_callJS(\'updateQuiz();\')','cjs');
                         G01.am('actn','Call JavaScript','MM_callJS(\'isIncorrect();\')','cjs');
-                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es “hardware”. Las demás opciones no agrupan adecuadamente al conjunto de dispositivos mencionado.\')','');
+                        // G01.am('actn','Popup Message','MM_popupMsg(\'Incorrecto. La respuesta correcta es "evitar ofrecer el producto o servicio en tu negocio". Incrementar tus habilidades personales, supervisar a otros que realizan el producto o servicio o capacitar a tus colaboradores son ventajas que nacen de la capacitación para aprender a hacer un producto o servicio tú mismo.\')','');
                         G01.am('end');
                         G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
                         G01.am('actn','Popup Message','MM_popupMsg(\'Debes seleccionar una opción.\')','');
@@ -230,7 +231,8 @@ html, body, #bg {
                     //-->
                       </script>
 <cbi-select object="G01">
-              </interaction>
+                  </interaction>
+                </section>
             </div>
         </div>
 
