@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> La clave para que sientas orgullo por tu negocio es que ofrezcas productos y servicios que disfrutas ofrecer y vender.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> ¡Excelente! El GDS (por sus siglas en inglés) es un sistema de hardware de computación para reservar productos de viaje usado por los clientes.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es "aquel disfrutas ofrecer y vender". Aquel que puedes ofrecer más barato, el que es más fácil de producir o hacer o el que no es afectado por el contexto son buenas posibilidades; pero recuerda que la mejor opción es aquella en la que estás comprometido emocionalmente.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> La opción D corresponde a la definición de LDS (sistema local de distribución?<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -173,20 +173,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">3. Es el mejor diseño de un producto o servicio que puedes ofrecer como emprendedor en tu negocio:</span></h6>
+                      <h6><span name="G01question">3. ¿Qué es un GDS (sistema global de distribución)?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Aquel que puedes ofrecer más barato.<br /><span class="message"></span>
+                          a) Sistema de hardware de computación para reservar productos de viaje usado por los clientes.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Aquel disfrutas ofrecer y vender.<br /><span class="message"></span>
+                            b) Sistema de hardware y software de computación para reservar productos de viaje usado por agentes de viajes.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Aquel que es más fácil de producir o hacer.<br /><span class="message"></span>
+                              c) Un programa que puedes instalar en nuestra computadora y automáticamente hace reservaciones<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Aquel que no es afectado por el contexto.<br /><span class="message"></span>
+                                d) Trabaja en base regional y/o enfocada en intereses que se conecta con un número ilimitado de proveedores, agentes, y de re-venta que hacen negocios a través de él.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">

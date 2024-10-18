@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Hacer una lluvia de ideas sin importar lo difícil o absurdo que suene te permite abrir la mente a nuevos productos y servicios, además puedes involucrar a alguien de confianza como amigos, familia, o vecinos para que te ayuden a generar más ideas.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> ¡Bien hecho! Una de las características de los operadores de turismo es que combinan los productos para crear un paquete de promociones.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> La respuesta correcta es "hacer lluvia de ideas". Creer que todo está dicho, pensar que es una tarea para una sola persona o pensar que no naciste con el don de ser creativo son ideas incorrectas acerca de la creatividad.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> El resto de las opciones no corresponde a características de un operador de turismo sino opciones de otros canales.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -173,20 +173,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">2. Es uno de los trucos que facilita la propuesta de ideas creativas en el diseño de productos o servicios:</span></h6>
+                      <h6><span name="G01question">2. ¿Cuál de las siguientes opciones corresponde a una característica de operadores de turismo?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Creer que todo está dicho.<br /><span class="message"></span>
+                          a) Combinan los productos para crear promociones<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Hacer una lluvia de ideas.<br /><span class="message"></span>
+                            b) Combinan los productos para crear una página web para un hotel<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Pensar que es una tarea para una sola persona.<br /><span class="message"></span>
+                              c) Combinan los productos<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Pensar que no naciste con el don de ser creativo.<br /><span class="message"></span>
+                                d) Combinan los productos para crear un paquete de vacaciones<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
@@ -198,9 +198,9 @@ html, body, #bg {
                       function newG01() {
                         G01 = new MM_interaction('G01',1,0,0,null,0,3,0,'','','c','',0);
                         G01.add('inpt','choice1',0,1,0,0);
-                        G01.add('inpt','choice2',0,1,1,10);
+                        G01.add('inpt','choice2',0,1,0,0);
                         G01.add('inpt','choice3',0,1,0,0);
-                        G01.add('inpt','choice4',0,1,0,0);
+                        G01.add('inpt','choice4',0,1,1,10);
                         G01.init();
                         G01.am('segm','Segment: Check Time_',1,0);
                         G01.am('cond','Time At Limit_','G01.timeAtLimit == true',0);
