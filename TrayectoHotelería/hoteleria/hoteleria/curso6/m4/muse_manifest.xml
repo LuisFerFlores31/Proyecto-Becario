@@ -1,0 +1,144 @@
+<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1421392557070">
+  <folder name="css">
+    <file name="site_global.css" crc="4103136145"/>
+    <file name="master_slides.css" crc="4069494159" ref="tema2:tema1:conclusion:tema3:tema4:tema5:introduccion:evaluacion"/>
+    <file name="master_a-master.css" crc="3824994185" ref="index"/>
+    <file name="tema2.css" crc="3978478639" ref="tema2"/>
+    <file name="tema1.css" crc="4293885512" ref="tema1"/>
+    <file name="conclusion.css" crc="267808855" ref="conclusion"/>
+    <file name="tema3.css" crc="340096204" ref="tema3"/>
+    <file name="tema4.css" crc="177759090" ref="tema4"/>
+    <file name="tema5.css" crc="4076479554" ref="tema5"/>
+    <file name="introduccion.css" crc="443982569" ref="introduccion"/>
+    <file name="index.css" crc="280437438" ref="index"/>
+    <file name="evaluacion.css" crc="3797460497" ref="evaluacion"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="index:tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="museutils.js" crc="4050293121" ref="index:tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="pie.js" crc="3827607177" ref="index:tema1:introduccion:tema4:tema5"/>
+    <file name="jquery.watch.js" crc="3946357177" ref="index:tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="webpro.js" crc="140723489" ref="index:tema4:tema5"/>
+    <file name="musewpdisclosure.js" crc="4078529368" ref="index"/>
+    <file name="musewpslideshow.js" crc="4170221289" ref="index:tema4:tema5"/>
+    <file name="jquery.museoverlay.js" crc="439400757" ref="index:tema4:tema5"/>
+    <file name="touchswipe.js" crc="321465556" ref="index:tema4:tema5"/>
+  </folder>
+  <folder name="images">
+    <file name="logo-nmp-crop-u1072.png" crc="4258766053" ref="index"/>
+    <file name="pasted image 177x58.jpg" crc="300359560" ref="index"/>
+    <file name="pasted image 76x78.jpg" crc="77326240" ref="index:tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="logo-cva.png" crc="4228320625" ref="index:tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="logo-nmp-crop-u1076.png" crc="409476843" ref="index"/>
+    <file name="u668-4.png" crc="311923444" ref="index"/>
+    <file name="u669-4.png" crc="156633980" ref="index"/>
+    <file name="u463-4.png" crc="4056108243" ref="index"/>
+    <file name="u454-4.png" crc="3849302379" ref="index"/>
+    <file name="u465-4.png" crc="4099624737" ref="index"/>
+    <file name="u455-4.png" crc="4080960588" ref="index"/>
+    <file name="u461-4.png" crc="463807256" ref="index"/>
+    <file name="u456-4.png" crc="167079539" ref="index"/>
+    <file name="u457-4.png" crc="506270740" ref="index"/>
+    <file name="u458-4.png" crc="4102693338" ref="index"/>
+    <file name="u673-4.png" crc="4013453671" ref="index"/>
+    <file name="u674-4.png" crc="4052106399" ref="index"/>
+    <file name="u676-4.png" crc="3798276090" ref="index"/>
+    <file name="u93-4.png" crc="3838755103" ref="index"/>
+    <file name="flecha-u103-4.png" crc="4290600897" ref="index"/>
+    <file name="praticas_b-u94-4.png" crc="4083773589" ref="index"/>
+    <file name="portafolio_b-u95-4.png" crc="3932393309" ref="index"/>
+    <file name="glosario_b-u96-4.png" crc="385158606" ref="index"/>
+    <file name="sabermas_b-u97-4.png" crc="120082813" ref="index"/>
+    <file name="u98-4.png" crc="4218145741" ref="index"/>
+    <file name="flecha-u104-4.png" crc="530291680" ref="index"/>
+    <file name="logo-nmp-crop-u1092.png" crc="4258766053" ref="tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="pasted image 177x582.jpg" crc="300359560" ref="tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="logo-nmp-crop-u1096.png" crc="409476843" ref="tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="iconodeslizar2.png" crc="249932250" ref="tema1:tema2:tema3:tema4:tema5"/>
+    <file name="u692-13.png" crc="3917329743" ref="tema1"/>
+    <file name="pasted image 1229x373.jpg" crc="78808207" ref="tema1"/>
+    <file name="u698-10.png" crc="3818530158" ref="tema1"/>
+    <file name="flechamorada.jpg" crc="4204389496" ref="tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="blank.gif" crc="4208392903" ref="tema1:tema2:tema3:introduccion:conclusion:evaluacion:tema4:tema5"/>
+    <file name="u691_states.png" crc="127574210" ref="tema1"/>
+    <file name="u691_states-r.png" crc="383814376" ref="tema1"/>
+    <file name="u702-5.png" crc="3974061536" ref="tema2"/>
+    <file name="pasted image 1365x530.jpg" crc="406627161" ref="tema2"/>
+    <file name="u713-10.png" crc="4282069499" ref="tema2"/>
+    <file name="u719-5.png" crc="3774531959" ref="tema2"/>
+    <file name="pasted image 961x714.jpg" crc="436322189" ref="tema2"/>
+    <file name="u720-10.png" crc="172674367" ref="tema2"/>
+    <file name="u721-4.png" crc="4030968002" ref="tema2"/>
+    <file name="u723-4.png" crc="476775410" ref="tema2"/>
+    <file name="u701_states.png" crc="127574210" ref="tema2"/>
+    <file name="u701_states-r.png" crc="383814376" ref="tema2"/>
+    <file name="u727-6.png" crc="4203501015" ref="tema3"/>
+    <file name="pasted image 863x221.jpg" crc="438157742" ref="tema3"/>
+    <file name="u733-25.png" crc="4273464710" ref="tema3"/>
+    <file name="pasted image 459x403.jpg" crc="4009849778" ref="tema3"/>
+    <file name="u726_states.png" crc="127574210" ref="tema3"/>
+    <file name="u726_states-r.png" crc="383814376" ref="tema3"/>
+    <file name="pasted image 1565x262-crop-u684.jpg" crc="3939797246" ref="introduccion"/>
+    <file name="u683-13.png" crc="313456857" ref="introduccion"/>
+    <file name="u689-16.png" crc="239728717" ref="introduccion"/>
+    <file name="pasted image 530x391.jpg" crc="3962326661" ref="introduccion"/>
+    <file name="pasted image 741x202.jpg" crc="363256448" ref="introduccion"/>
+    <file name="u641-5.png" crc="4029786486" ref="introduccion"/>
+    <file name="u640-4.png" crc="162837927" ref="introduccion"/>
+    <file name="u647-4.png" crc="3867541780" ref="introduccion"/>
+    <file name="u648-4.png" crc="388241553" ref="introduccion"/>
+    <file name="u654-6.png" crc="233794020" ref="introduccion"/>
+    <file name="u649-4.png" crc="206788219" ref="introduccion"/>
+    <file name="u652-4.png" crc="380683949" ref="introduccion"/>
+    <file name="u650-4.png" crc="249365338" ref="introduccion"/>
+    <file name="u653-4.png" crc="4058303573" ref="introduccion"/>
+    <file name="u651-4.png" crc="417359017" ref="introduccion"/>
+    <file name="u656_states.png" crc="127574210" ref="introduccion"/>
+    <file name="u656_states-r.png" crc="383814376" ref="introduccion"/>
+    <file name="u971-6.png" crc="108459797" ref="conclusion"/>
+    <file name="pasted image 2602x1039-crop-u966.jpg" crc="526195678" ref="conclusion"/>
+    <file name="u972-14.png" crc="350220077" ref="conclusion"/>
+    <file name="u965_states.png" crc="127574210" ref="conclusion"/>
+    <file name="u965_states-r.png" crc="383814376" ref="conclusion"/>
+    <file name="u1061-4.png" crc="92457813" ref="evaluacion"/>
+    <file name="pasted image 352x79.jpg" crc="117354230" ref="evaluacion"/>
+    <file name="u1060_states.png" crc="127574210" ref="evaluacion"/>
+    <file name="u1060_states-r.png" crc="383814376" ref="evaluacion"/>
+    <file name="u797-15.png" crc="1709547" ref="tema4"/>
+    <file name="pasted image 876x559.jpg" crc="3831335993" ref="tema4"/>
+    <file name="pasted image 1594x360.jpg" crc="268314042" ref="tema4"/>
+    <file name="u747-4.png" crc="426165537" ref="tema4"/>
+    <file name="u749-4.png" crc="368009612" ref="tema4"/>
+    <file name="u855-11.png" crc="2704698" ref="tema4"/>
+    <file name="pasted image 770x750.jpg" crc="109658474" ref="tema4"/>
+    <file name="u869-12.png" crc="3897667039" ref="tema4"/>
+    <file name="pasted image 693x614.jpg" crc="168870802" ref="tema4"/>
+    <file name="u881-12.png" crc="186190088" ref="tema4"/>
+    <file name="pasted image 774x567.jpg" crc="4040003226" ref="tema4"/>
+    <file name="pasted image 1002x770.jpg" crc="163505823" ref="tema4"/>
+    <file name="u748-6.png" crc="113603785" ref="tema4"/>
+    <file name="u741_states.png" crc="127574210" ref="tema4"/>
+    <file name="u741_states-r.png" crc="383814376" ref="tema4"/>
+    <file name="pasted image 1565x262-crop-u888.jpg" crc="293998691" ref="tema5"/>
+    <file name="u887-6.png" crc="4076523422" ref="tema5"/>
+    <file name="u954-49.png" crc="4012192226" ref="tema5"/>
+    <file name="u898-6.png" crc="74271320" ref="tema5"/>
+    <file name="pasted image 1477x109.jpg" crc="95440842" ref="tema5"/>
+    <file name="u899-18.png" crc="4168975857" ref="tema5"/>
+    <file name="u905-4.png" crc="506131910" ref="tema5"/>
+    <file name="u902-4.png" crc="4195649020" ref="tema5"/>
+    <file name="u907-33.png" crc="3784775042" ref="tema5"/>
+    <file name="u903-4.png" crc="4092082942" ref="tema5"/>
+    <file name="u886_states.png" crc="127574210" ref="tema5"/>
+    <file name="u886_states-r.png" crc="383814376" ref="tema5"/>
+  </folder>
+  <file name="index.html" crc="4005719577" mt="1421392129536" redirect="true"/>
+  <file name="tema1.html" crc="71476850" mt="1421392147725" redirect="true"/>
+  <file name="tema2.html" crc="4037495572" mt="1421392147726" redirect="true"/>
+  <file name="tema3.html" crc="411980813" mt="1421392147727" redirect="true"/>
+  <file name="introduccion.html" crc="4260872543" mt="1421392147729" redirect="true"/>
+  <file name="conclusion.html" crc="4046471391" mt="1421392147730" redirect="true"/>
+  <file name="evaluacion.html" crc="4211073122" mt="1421392147731" redirect="true"/>
+  <file name="tema4.html" crc="3785992665" mt="1421392554891" redirect="true"/>
+  <file name="tema5.html" crc="520105899" mt="1421392147733" redirect="true"/>
+</manifest>

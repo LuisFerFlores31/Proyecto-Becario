@@ -1,0 +1,161 @@
+.html
+{
+	background-color: #FBFBFB;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1016px;
+	min-height: 599.625px;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: 142px;
+	margin-bottom: 5px;
+}
+
+#u6570
+{
+	z-index: 84;
+	width: 1216px;
+	top: -10px;
+	left: -100px;
+}
+
+#u551
+{
+	z-index: 85;
+	width: 1216px;
+	padding-bottom: 5px;
+	margin-right: -10000px;
+}
+
+#u6382-4
+{
+	z-index: 88;
+	width: 597px;
+	min-height: 24px;
+	margin-right: -10000px;
+	margin-top: 25px;
+	left: 507px;
+}
+
+#u6321
+{
+	z-index: 86;
+	width: 80px;
+	margin-right: -10000px;
+	margin-top: 5px;
+	left: 1124px;
+}
+
+#u7238
+{
+	z-index: 94;
+	width: 250px;
+	top: 6px;
+	left: -75px;
+}
+
+#u7236
+{
+	z-index: 92;
+	width: 250px;
+	top: 6px;
+	left: 141px;
+}
+
+#pu6625
+{
+	width: 0.01px;
+	left: -62px;
+	position: relative;
+}
+
+#u6625
+{
+	z-index: 2;
+	width: 392px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 10px;
+}
+
+#u6638-36
+{
+	z-index: 4;
+	display: block;
+	vertical-align: top;
+	position: relative;
+	margin-right: -10000px;
+	left: 411px;
+}
+
+#u6639-35
+{
+	z-index: 40;
+	display: block;
+	vertical-align: top;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 333px;
+}
+
+#u6643-6
+{
+	z-index: 75;
+	width: 324px;
+	min-height: 22px;
+	font-style: normal;
+	left: -62px;
+	position: relative;
+	background: transparent url("../images/flechamorada.jpg") no-repeat left center;
+}
+
+#u6643-4
+{
+	padding-left: 30px;
+}
+
+#u6643-2
+{
+	color: #B63B6A;
+}
+
+#u6644
+{
+	z-index: 82;
+	background: url("../images/u6644_states.png") no-repeat 0px 0px;
+	left: -60px;
+	margin-top: 21px;
+	position: relative;
+}
+
+#u6644_states
+{
+	height: 49px;
+	width: 155px;
+	vertical-align: top;
+}
+
+#u6644:hover #u6644_states
+{
+	background: url("../images/u6644_states-r.png") no-repeat 0px 0px;
+}
+
+body
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+
