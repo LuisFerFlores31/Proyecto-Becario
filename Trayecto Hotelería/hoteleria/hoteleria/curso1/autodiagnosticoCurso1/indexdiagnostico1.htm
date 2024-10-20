@@ -1,0 +1,125 @@
+<HTML>
+
+<HEAD>
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="generator" content="2014.2.0.284" />
+    <TITLE>Hoteleria y Turismo</TITLE>
+
+    <!-- Le styles -->
+
+    <link href="assets/css/loader-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/js/calendar/css/calendar.css">
+    <link rel="stylesheet" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+
+
+    <style type="text/css">
+        @import url(https://weloveiconfonts.com/api/?family=fontelico);
+
+        /* fontelico */
+        [class*="fontelico-"]:before {
+            font-family: 'fontelico', sans-serif;
+        }
+
+        /* entypo */
+        [class*="entypo-"]:before {
+            font-family: 'entypo', sans-serif;
+        }
+
+        /* fontawesome */
+        [class*="fontawesome-"]:before {
+            font-family: 'FontAwesome', sans-serif;
+        }
+
+        body {
+            padding-top: 120px;
+            padding-bottom: 0;
+        }
+
+        #g1 {
+            width: 60%;
+        }
+
+        #g2 {
+            width: 60%;
+        }
+
+        #g3 {
+            width: 60%;
+        }
+    </style>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body,
+        #bg {
+            height: 100%;
+            width: 100%;
+        }
+
+        #bg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #bg img {
+            width: 100%;
+            min-width: 1024px;
+            min-height: 768px;
+        }
+
+        #content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+</HEAD>
+
+<FRAMESET ROWS="*,80" COLS="*" framespacing="0" border="0">
+    <FRAME SRC="overview.html" NAME="main" noresize frameborder="no" marginwidth="0" marginheight="0">
+        <FRAME SRC="nav.html" NAME="nav" noresize SCROLLING="NO" frameborder="no" marginwidth="0" marginheight="0">
+</FRAMESET>
+<NOFRAMES>
+
+    <BODY BGCOLOR="#FFFFFF">
+
+        <!-- MAIN EFFECT -->
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/load.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                $(".tooltip-tip2, .tooltip-tip").on('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    location.href = $(this).attr('href');
+                });
+            });
+        </script>
+
+    </BODY>
+</NOFRAMES>
+
+</HTML>

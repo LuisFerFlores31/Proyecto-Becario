@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<TITLE>Hoteleria y Turismo</TITLE>
+<meta charset="utf-8">
+<link href="css/general.css" rel="stylesheet" type="text/css">
+
+<!-- Le styles -->
+
+<link href="assets/css/loader-style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/js/calendar/css/calendar.css">
+<link rel="stylesheet" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+
+
+<style type="text/css">
+@import url(https://weloveiconfonts.com/api/?family=fontelico);
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family:'fontelico', sans-serif;
+}
+/* entypo */
+[class*="entypo-"]:before {
+    font-family:'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family:'FontAwesome', sans-serif;
+}
+body {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+#g1 {
+    width:60%;
+}
+#g2 {
+    width: 60%;
+}
+#g3 {
+    width: 60%;
+}
+</style>
+
+<style type="text/css">
+
+body {
+   margin:0; padding:0;
+}
+html, body, #bg {
+   height:100%;
+   width:100%;
+}
+#bg {
+   position:absolute; 
+   left:0;
+   right:0;
+   bottom:0;
+   top:0;
+   overflow:hidden;
+   z-index:-1;
+}
+#bg img {
+   width:100%;
+   min-width:1024px;
+   min-height:768px;
+}
+#content {
+    position:relative;
+   z-index:1;
+}
+
+</style>
+
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="img/favicon.png">
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<br/>
+
+<table border="0" cellpadding="1" cellspacing="1" align="center" width="90%">
+<tr>
+<td align="center">
+
+<!--Content-->
+<div class="row-fluid">
+    <div class="span12">
+    
+        <!-- LABEL -->
+        <div class="nest">
+        	<div class="title">
+                <span class="titleIcon entypo-menu"></span>
+                <h6>Autodiagn&oacute;stico</h6>
+            </div>
+            <div class="body-nest">
+                <section id="flip-scroll">
+			
+				<p><strong>&iquest;Cu&aacute;nto conoces del tema? </strong></p>
+				<P style="padding:0px 25px 0px 25px;"><font face="Arial, Helvetica, sans-serif" size="2">Realiza a continuaci&oacute;n un peque&ntilde;o examen de autodiagn&oacute;stico conformado por <strong>10 preguntas </strong>con opci&oacute;n m&uacute;ltiple. Esta autoevaluaci&oacute;n te permitir&aacute; identificar cu&aacute;nto sabes de los contenidos del curso.</font></P>
+				<P class="boldnegro" style="padding:0px 25px 0px 25px;">Instrucciones:</P>
+                <ol style="padding:0px 25px 0px 25px; list-style:none;" class="lead well">
+                  <li>Lee cuidadosamente cada una de las preguntas y/o premisas que se presentan.</li>
+                  <li>Selecciona la opci&oacute;n que consideres apropiada; solamente una de ellas es correcta.</li>
+                  <li>Haz clic en retroalimentaci&oacute;n para revisar tus resultados, al finalizar el autodiagn&oacute;stico.</li>
+                </ol>
+				<p class="boldnegro" style="padding:0px 25px 0px 25px;">Importante:</p>
+                <ol style="padding:0px 25px 0px 25px; list-style:none; list-style-image:none;" class="lead well">
+                  <li>Este autodiagn&oacute;stico no tiene valor para la acreditaci&oacute;n del curso. Recuerda que tus resultados simplemente te permitir&aacute;n hacer un estimado de los conocimientos previos que posees de los temas que revisar&aacute;s.</li>
+                  <li>Es necesario que contestes <strong>todas</strong> las preguntas, para obtener un resultado objetivo de tus conocimientos.</li>
+                </ol>
+				<p class="boldnegro" style="padding:0px 25px 0px 25px; text-align:center;" align="center">&iexcl;Ánimo y sigue adelante! </p>
+
+				</section>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Content: Termina-->
+                  
+</td>
+</tr>
+</table>
+         
+<!-- MAIN EFFECT -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/load.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+$(window).on('load', function() {
+	$(".tooltip-tip2, .tooltip-tip").on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		location.href = $(this).attr('href');
+	});
+});
+</script>
+
+</BODY>
+</HTML>
