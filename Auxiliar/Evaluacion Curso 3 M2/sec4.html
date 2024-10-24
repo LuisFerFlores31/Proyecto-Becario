@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Los baby boomers o niños del Boom de natalidad posterior a la Segunda Guerra Mundial, hacen más uso de los agentes de viajes.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Correcto. Hoy en día, los viajeros están buscando vivir experiencias únicas.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> El 33% que hace uso de los agentes de viajes son “Generaciones X y Y” (Generación posterior a los ’boomers’  y la generación de la cual se es parte).<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Incorrecto. Hoy en día, los viajeros están buscando vivir experiencias únicas.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">4. En las tendencias para reservar viajes, ¿qué generación hace más uso de los agentes de viajes?</span></h6>
+                      <h6><span name="G01question">4. ¿Qué busca un huésped hoy en día?</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Generación X<br /><span class="message"></span>
+                          a) Tomar riesgos.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Generación Y<br /><span class="message"></span>
+                            b) No gastar en combustible.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Baby boomers<br /><span class="message"></span>
+                              c) Vivir una experiencia única.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Adultos contemporáneos<br /><span class="message"></span>
+                                d) Mejorar su salud.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
