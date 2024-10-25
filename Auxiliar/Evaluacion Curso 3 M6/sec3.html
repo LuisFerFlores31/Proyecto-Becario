@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>Correcto.</strong> Correcto. La degradación del medio ambiente trae consigo altos costos operacionales y el incremento en el costo de los bienes básicos.<br/>';
+        results[i].innerHTML= '<strong>Correcto.</strong> Correcto. El desarrollo sostenible es el que satisface las necesidades del presente sin afectar el desarrollo para las comunidades futuras.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> Incorrecto. La degradación del medio ambiente trae consigo altos costos operacionales y el incremento en el costo de los bienes básicos.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Incorrecto. El desarrollo sostenible es el que satisface las necesidades del presente sin afectar el desarrollo para las comunidades futuras.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">3. ¿Cuál de estos puntos puede incrementar mis costos?</span></h6>
+                      <h6><span name="G01question">3. Se entiende como el desarrollo que satisface las necesidades del presente sin comprometer las futuras:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) No conservar los sitios arqueológicos cercanos a mi destino.<br /><span class="message"></span>
+                          a) Dimensión económica.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) La degradación del medio ambiente.<br /><span class="message"></span>
+                            b) Desarrollo sostenible.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) El excesivo volumen de turistas. <br /><span class="message"></span>
+                              c) Dimensión ecológica. <br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) No promover la gastronomía local.<br /><span class="message"></span>
+                                d) Dimensión Social.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">

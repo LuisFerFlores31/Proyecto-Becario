@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>¡Bien!,</strong> Correcto. El cambio climático y los desastres naturales cada vez son más relevantes a la industria del turismo en la medida que incrementan costos y reducen ingresos.<br/>';
+        results[i].innerHTML= '<strong>¡Bien!,</strong> Correcto. Examinarte a ti mismo y colaborar con la comunidad son elementos que forman parte del desarrollo sostenible de un hotel.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> Incorrecto. El cambio climático y los desastres naturales cada vez son más relevantes a la industria del turismo en la medida que incrementan costos y reducen ingresos.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> Incorrecto. Examinarte a ti mismo y colaborar con la comunidad son elementos que forman parte del desarrollo sostenible de un hotel.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">2. ¿Cómo impactan los desastres naturales a mi negocio?</span></h6>
+                      <h6><span name="G01question">2. Son parte del proceso de desarrollo sostenible de un hotel:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Reducen costos e incrementan ingresos.<br /><span class="message"></span>
+                          a) Albergue o comida.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Incrementan costos y reducen ingresos.<br /><span class="message"></span>
+                            b) Examinarte a ti mismo, colaborar con la comunidad.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Pérdida de interés en mi destino.<br /><span class="message"></span>
+                              c) Ahorrar costos, generación de empleo.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Poca accesibilidad al destino.<br /><span class="message"></span>
+                                d) Crear historia para mercadear, diferenciar para atraer clientes.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
