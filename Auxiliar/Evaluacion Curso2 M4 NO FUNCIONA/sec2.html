@@ -35,7 +35,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('correct');       
-        results[i].innerHTML= '<strong>¡Bien!,</strong> ¡Buen trabajo! Estos viajes a menudo son para propósitos de recreación / vacaciones (37%) o para visitar amigos y familiares (34%).<br/>';
+        results[i].innerHTML= '<strong>¡Bien!,</strong> La unión de varios hoteles para la compra colectiva de productos se traduce en un gran mayoreo, con lo cual se obtienen mejores precios por parte de los proveedores, inclusive mejores formas de pago y fechas de entrega.<br/>';
     } else {
         radios[i].parentElement.classList.remove('correct');
         radios[i].parentElement.classList.remove('incorrect');
@@ -50,7 +50,7 @@ for (var i = 0; i < radios.length; i++) {
     if (radios[i].type === 'radio' && radios[i].checked) {
         // get value, set checked flag or do whatever you need to
         radios[i].parentElement.classList.add('incorrect');
-        results[i].innerHTML= '<strong>Incorrecto.</strong> No fueron mencionados los viajes por propósitos laborales o emergencias como viajes planificados en línea.<br/>';
+        results[i].innerHTML= '<strong>Incorrecto.</strong> La amistad o unión entre hoteleros te permitirá poder hacer compras colectivas, pero el principal beneficio es el mejor precio que puedes pedir a tu proveedor por la compra de gran mayoreo.<br/>';
         
     } else {
         radios[i].parentElement.classList.remove('correct');
@@ -172,20 +172,20 @@ html, body, #bg {
                 <section id="flip-scroll">
                   <interaction name="MultCh_Radios01" object="G01" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js">
                     <div name="G01Layer">
-                      <h6><span name="G01question">2. Del 66% de viajes planificados en línea, ¿cuál es el tipo de viaje más solicitado?</span></h6>
+                      <h6><span name="G01question">2. Uno de los beneficios de las compras colectivas es:</span></h6>
                       <form name="G01choices">
                         <span name="G01choice1">
                           <input name="G01RadioInp" type="radio" onclick="G01.e['choice1'].update();" />
-                          a) Visitar amigos y familiares<br /><span class="message"></span>
+                          a) Unión entre hoteleros.<br /><span class="message"></span>
                         </span> <span name="G01choice2">
                             <input name="G01RadioInp" type="radio" onclick="G01.e['choice2'].update();" />
-                            b) Recreación / vacaciones<br /><span class="message"></span>
+                            b) Obtener mejores precios por parte de los proveedores.<br /><span class="message"></span>
                             </span> <span name="G01choice3">
                               <input name="G01RadioInp" type="radio" onclick="G01.e['choice3'].update();" />
-                              c) Propósitos laborales<br /><span class="message"></span>
+                              c) Tener el mismo producto en todos los hoteles.<br /><span class="message"></span>
                               </span> <span name="G01choice4">
                                 <input name="G01RadioInp" type="radio" onclick="G01.e['choice4'].update();" />
-                                d) Viajes por emergencias<br /><span class="message"></span>
+                                d) No tener que buscar más proveedores.<br /><span class="message"></span>
                                 </span><br />
                       </form>
                       <form name="G01controls">
