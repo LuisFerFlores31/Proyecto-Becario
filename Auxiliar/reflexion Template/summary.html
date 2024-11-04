@@ -1,0 +1,298 @@
+<HTML>
+
+<HEAD>
+  <TITLE>Untitled Document</TITLE>
+  <meta charset="utf-8">
+
+  <SCRIPT LANGUAGE="JAVASCRIPT">
+    // Make copy of quiz object from navigation bar at load time. 
+    var quiz = parent.nav.quiz
+
+    // Functions that provide quiz-related data to be dynamically written
+    // to the summary page
+
+    // Returns the width of a bar graph image for a question time limit
+    function getMaxImg(i) {
+      return quiz[i].timeLimit * 3
+    }
+
+    // Returns the width of a bar graph image for a question actual time
+    function getActImg(i) {
+      return quiz[i].time * 3
+    }
+
+    // Returns the question time limit for display after the bar graph
+    function getMax(i) {
+      return "<FONT SIZE='-1'>" + quiz[i].timeLimit + "</FONT>"
+    }
+
+    // Returns the question actual time for display after the bar graph
+    function getAct(i) {
+      if (quiz[i].time <= quiz[i].timeLimit) {
+        return "<FONT SIZE='-1'>" + quiz[i].time + "</FONT>"
+      } else {
+        // if actual time exceeds the time limit, the knowledge
+        // object does not increment the actual time past 
+        // the time limit + 1.
+        return "<FONT SIZE='-1'>" + quiz[i].time + " (or more)</FONT>"
+      }
+      return "n/a"
+    }
+
+    // Returns the question number of tries recorded by the knowledge object
+    function getTries(i) {
+      return quiz[i].tries
+    }
+
+    // Returns the question score recorded by the knowledge object
+    function getScore(i) {
+      var triesResult, timeResult, scoreResult
+      with (quiz[i]) {
+        triesResult = tries
+        timeResult = time
+        scoreResult = score
+      }
+      return scoreResult // 100 - (triesResult * timeResult)
+    }
+
+    // Returns the section title of the knowledge object
+    function sectionTitle(i) {
+      var sectionTitle = "";
+      switch (i) {
+        case 1:
+          sectionTitle = "01";
+          break;
+        case 2:
+          sectionTitle = "02";
+          break;
+        case 3:
+          sectionTitle = "03";
+          break;
+        case 4:
+          sectionTitle = "04";
+          break;
+        case 5:
+          sectionTitle = "05";
+          break;
+        case 6:
+          sectionTitle = "06";
+          break;
+        case 7:
+          sectionTitle = "07";
+          break;
+        case 8:
+          sectionTitle = "08";
+          break;
+        case 9:
+          sectionTitle = "09";
+          break;
+        case 10:
+          sectionTitle = "10";
+          break;
+        default:
+          sectionTitle: "Pregunta"
+          break;
+      }
+      return sectionTitle
+    }
+
+    // Returns correcto or incorrect to every getScore value
+    function sectionScore(i) {
+      var sectionScore = "";
+      if (getScore(i) == 10) {
+        sectionScore = "<font color='#00CC00'>Correcto</font>";
+      } else {
+        sectionScore = "<font color='#FF0000'>Incorrecto</font>";
+      }
+      return sectionScore
+    }
+
+    //Deshabilitar los botones en la Evaluacion
+    // Se usan estos IDs para conservar el script del hover creado por Fireworks
+    //top.frames["nav"].document.images["btnSiguiente"].style.visibility = "hidden"; // Bot&oacute;n exit
+    top.frames["nav"].document.getElementById("btnSiguiente").style.display = "none";
+    top.frames["nav"].document.getElementById("btnComenzar").style.display = "none";
+    top.frames["nav"].document.getElementById("btnRetro").style.display = "none";
+    top.frames["nav"].document.getElementById("btnCerrar").style.display = "inline-table";
+    //document.getElementById("btnCerrar").style.display = "block";		
+    //-->
+  </SCRIPT>
+  <link href="css/general.css" rel="stylesheet" type="text/css">
+
+  <!-- Le styles -->
+  <link href="assets/css/loader-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/calendar/css/calendar.css">
+  <link rel="stylesheet" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+
+  <style type="text/css">
+    @import url(https://weloveiconfonts.com/api/?family=fontelico);
+
+    /* fontelico */
+    [class*="fontelico-"]:before {
+      font-family: 'fontelico', sans-serif;
+    }
+
+    /* entypo */
+    [class*="entypo-"]:before {
+      font-family: 'entypo', sans-serif;
+    }
+
+    /* fontawesome */
+    [class*="fontawesome-"]:before {
+      font-family: 'FontAwesome', sans-serif;
+    }
+
+    body {
+      padding-top: 120px;
+      padding-bottom: 0;
+    }
+
+    #g1 {
+      width: 60%;
+    }
+
+    #g2 {
+      width: 60%;
+    }
+
+    #g3 {
+      width: 60%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    #bg {
+      height: 100%;
+      width: 100%;
+    }
+
+    #bg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    #bg img {
+      width: 100%;
+      min-width: 1024px;
+      min-height: 768px;
+    }
+
+    #content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/favicon.png">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+  <table border="0" cellpadding="1" cellspacing="1" align="center" width="90%">
+    <tr>
+      <td>
+        <!--Content-->
+        <div class="row-fluid">
+          <div class="span12">
+            <!-- LABEL -->
+            <div class="nest">
+              <div class="body-nest">
+                <section id="flip-scroll">
+                  <table width="100%" cellpadding="5" cellspacing="5">
+                    <tr>
+                      <td width="300" style="padding-right: 35px;">
+                        <table class="table table-bordered table-striped cf">
+                          <thead class="cf">
+                            <tr>
+                              <th style="text-align:center;">
+                                <font face="Arial, Helvetica, sans-serif" size="2">Competencia:</font>
+                              </th>
+                              <th style="text-align:center;">
+                                <font face="Arial, Helvetica, sans-serif" size="2">Evaluación:</font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <SCRIPT LANGUAGE="JAVASCRIPT">
+                              if (!quiz) {
+                                setTimeout("location.reload(true)", 2000)
+                              } else {
+                                var pageCounter = 0
+                                for (var i = 0; i < quiz.length; i++) {
+                                  if (i > 0 && i < (quiz.length - 1)) {
+                                    document.writeln("<tr>")
+                                    document.writeln("<td STYLE='text-align:center;' HEIGHT='10px'>" + sectionTitle(i) + "</td>")
+                                    document.writeln("<td STYLE='text-align:center;' HEIGHT='10px'>" + getScore(i) + "</td>")
+                                    document.writeln("</tr>")
+                                  }
+                                }
+                                var totalScore = 0
+                                for (var i = 0; i < quiz.length; i++) {
+                                  if (i > 0 && i < (quiz.length - 1)) {
+                                    totalScore = totalScore + getScore(i)
+                                  }
+                                }
+                                var averageScore = eval(totalScore / 6)
+                                //var arr = averageScore.toString().split(".")
+                                //var finalResult = arr[0]
+
+                                document.writeln("<tr>")
+                                document.writeln("<td STYLE='text-align:center;'>Promedio obtenido:</td>")
+                                document.writeln("<td STYLE='text-align:center;'>" + averageScore.toFixed(2) + " puntos.</td>")
+                                document.writeln("</tr>")
+                              }
+                            </SCRIPT>
+                          </tbody>
+                        </table>
+                        <!--Termina: Tabla de puntuaci&oacute;n-->
+                      </td>
+                      <td valign="middle">
+						  <h4>Vender servicios de alojamiento.</h4><br>
+                        <h4>Reflexiona:</h4>
+                        <ul>
+                          <li>¿En qué competencia has logrado mayor desarrollo sostenible?</li>
+                          <li>¿Cuál te ha generado más ahorros y ganancias?</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Content: Termina-->
+      </td>
+    </tr>
+  </table>
+	<br>
+
+  <!-- MAIN EFFECT -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/load.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $(".tooltip-tip2, .tooltip-tip").on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        location.href = $(this).attr('href');
+      });
+    });
+  </script>
+
+</BODY>
+
+</HTML>
