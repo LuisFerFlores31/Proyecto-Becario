@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Evaluaci&oacute;n</title>
+<script language="JavaScript"></script>
+<script language="JavaScript" src="scripts/behActions.js"></script>
+<script language="JavaScript" src="scripts/behCourseBuilder.js"></script>
+<script language="JavaScript" src="scripts/interactionClass.js"></script>
+<script language="JavaScript" src="scripts/elemInptClass.js"></script>
+<script language="JavaScript" src="scripts/cmi.js"></script>
+<link href="css/general.css" rel="stylesheet" type="text/css" />
+<link href="css/interaccion.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+//Deshabilitar los botones en la Evaluacion
+// Se usan estos IDs para conservar el script del hover creado por Fireworks
+//top.frames["nav"].document.images["btnSiguiente"].style.visibility = "hidden"; // Bot&oacute;n exit
+top.frames["nav"].document.getElementById("btnSiguiente").style.display = "none";
+top.frames["nav"].document.getElementById("btnComenzar").style.display = "none";
+top.frames["nav"].document.getElementById("btnRetro").style.display = "inline-table";
+top.frames["nav"].document.getElementById("btnCerrar").style.display = "none";
+//document.getElementById("btnCerrar").style.display = "block";	
+</script>
+
+<!-- Le styles -->
+
+<link href="assets/css/loader-style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/js/calendar/css/calendar.css">
+<link rel="stylesheet" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+
+
+<style type="text/css">
+@import url(https://weloveiconfonts.com/api/?family=fontelico);
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family:'fontelico', sans-serif;
+}
+/* entypo */
+[class*="entypo-"]:before {
+    font-family:'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family:'FontAwesome', sans-serif;
+}
+body {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+#g1 {
+    width:60%;
+}
+#g2 {
+    width: 60%;
+}
+#g3 {
+    width: 60%;
+}
+</style>
+
+<style type="text/css">
+
+body {
+   margin:0; padding:0;
+}
+html, body, #bg {
+   height:100%;
+   width:100%;
+}
+#bg {
+   position:absolute; 
+   left:0;
+   right:0;
+   bottom:0;
+   top:0;
+   overflow:hidden;
+   z-index:-1;
+}
+#bg img {
+   width:100%;
+   min-width:1024px;
+   min-height:768px;
+}
+#content {
+    position:relative;
+   z-index:1;
+}
+.correct{
+  color: green;
+}
+:not(.correct):not(.incorrect) > .message{
+  display: none;
+}
+.message{
+  display: block;
+  margin:10px 0px
+}
+.incorrect{
+  color: red;
+}
+
+</style>
+
+
+<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body onload="MM_initInteractions();initPage()">
+
+<table border="0" cellpadding="1" cellspacing="1" align="center" width="90%">
+<tr>
+<td>
+
+<!--Content-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Enunciados</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Descubre qué tipo de gastos tienes</h2>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Enunciado</th>
+        <th>Respuesta</th>
+    </tr>
+    <!-- Fila 1 a 10 con enunciados numerados -->
+    <tr>
+        <td>1</td>
+        <td>Pago del recibo de luz</td>
+        <td><input type="text" name="respuesta2_1"></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Pago de la recolección de basura </td>
+        <td><input type="text" name="respuesta2_2"></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Pago de los vales de gasolina como prestación a los empleados</td>
+        <td><input type="text" name="respuesta2_3"></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Pago de la gasolina por el traslado a los huéspedes</td>
+        <td><input type="text" name="respuesta2_4"></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Pago de la impresión de los volantes</td>
+        <td><input type="text" name="respuesta2_5"></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Pago de los productos de limpieza</td>
+        <td><input type="text" name="respuesta2_6"></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Pago de impuestos</td>
+        <td><input type="text" name="respuesta2_7"></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Pago de la licencia municipal</td>
+        <td><input type="text" name="respuesta2_8"></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Pago de nómina </td>
+        <td><input type="text" name="respuesta2_9"></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Pago de la pintura que se usa para mantenimiento de la fachada del hotel</td>
+        <td><input type="text" name="respuesta2_10"></td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+<!--Content: Termina-->
+
+</td>
+</tr>
+</table>
+
+<!-- MAIN EFFECT -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/load.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+$(window).on('load', function() {
+	$(".tooltip-tip2, .tooltip-tip").on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		location.href = $(this).attr('href');
+	});
+});
+</script>
+
+</body>
+</html>

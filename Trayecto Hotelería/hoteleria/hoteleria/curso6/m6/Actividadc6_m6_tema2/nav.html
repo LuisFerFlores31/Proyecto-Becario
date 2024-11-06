@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Hoteleria y Turismo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">td img {display: block;}</style>
+
+<!-- Le styles -->
+
+<link href="assets/css/loader-style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/js/calendar/css/calendar.css">
+<link rel="stylesheet" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+
+
+<style type="text/css">
+@import url(https://weloveiconfonts.com/api/?family=fontelico);
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family:'fontelico', sans-serif;
+}
+/* entypo */
+[class*="entypo-"]:before {
+    font-family:'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family:'FontAwesome', sans-serif;
+}
+body {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+#g1 {
+    width:60%;
+}
+#g2 {
+    width: 60%;
+}
+#g3 {
+    width: 60%;
+}
+</style>
+
+<style type="text/css">
+
+body {
+   margin:0; padding:0;
+}
+html, body, #bg {
+   height:100%;
+   width:100%;
+}
+#bg {
+   position:absolute; 
+   left:0;
+   right:0;
+   bottom:0;
+   top:0;
+   overflow:hidden;
+   z-index:-1;
+}
+#bg img {
+   width:100%;
+   min-width:1024px;
+   min-height:768px;
+}
+#content {
+    position:relative;
+   z-index:1;
+}
+
+</style>
+
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+<body bgcolor="#FFFFFF">
+<script language="JavaScript">
+<!--
+// constructor for a quiz page object
+function quizPage(src, time, timeLimit, tries, score, completed) {
+  this.src = src
+  this.time = (!time) ? 0 : time
+  this.timeLimit = (!timeLimit) ? 0 : timeLimit
+  this.tries = (!tries) ? 0 : tries
+  this.score = (!score) ? 0 : score
+  this.completed = (!completed) ? false : completed
+}
+
+// create array of all quiz pages in the entire quiz
+var quiz = new Array()
+
+/* ----------------------------------------------------------------
+   MODIFY THE CODE IN THE FOLLOWING SECTION.
+   This is where you define the parameters for each page of the
+   quiz, including introductory and summary pages.
+   
+   Create a new entry in the quiz array by assigning a new
+   quizPage object to succeeding quiz array entries (starting with
+   zero). Parameters that must be set for the initial objects describe
+   the URL of the top frame page.
+   ------------------------------------------------------------------ */
+quiz[0] = new quizPage("overview.html")
+quiz[1] = new quizPage("sec1.html")
+quiz[2] = new quizPage("summary.html")
+
+/* -----------------------------------------------------------------
+   END CODE MODIFICATION SECTION
+   -----------------------------------------------------------------*/
+
+function goNext() {
+  var currPage, i
+  for (i=0; i<(quiz.length-1); i++) {
+    if (parent.main.location.href.indexOf(quiz[i].src) != -1) {
+	  parent.main.location.href = quiz[i+1].src
+	  break
+	}
+  }
+}
+
+// navigate to previous quiz page in sequence
+function goPrev() {
+  var currPage, i
+  for (i=(quiz.length-1); i>0; i--) {
+    if (parent.main.location.href.indexOf(quiz[i].src) != -1) {
+	  parent.main.location.href = quiz[i-1].src
+	  break
+	}
+  }
+}
+
+// navigate to first quiz page in sequence
+function goFirst() {
+  parent.main.location.href = quiz[0].src
+}
+
+// navigate to first quiz page in sequence
+function goLast() {
+  parent.main.location.href = quiz[quiz.length-1].src
+}
+
+// don't go anywhere, but set visibility of navigation control
+// layers in the event of a page reload
+function initPage() {
+  var i, storage
+  storage = document.forms["persistence"].persist.value
+  if (storage) {
+    restoreQuizObjects(storage)
+  }
+  for (i=0; i<(quiz.length); i++) {
+    if (parent.main.location.href.indexOf(quiz[i].src) != -1) {
+	  break
+	}
+  }
+}
+
+// event handler for Navigator frame resize/reload
+function handleNNResize() {
+  var NS = (navigator.appName.indexOf("Netscape") != -1)
+  if (NS) {
+	history.go(0)
+  }
+}
+
+// restoration of data from persistent storage
+// using a text field in the nav frame for storage
+function restoreQuizObjects(storage) {
+  var quizzes, p
+  quizzes = storage.split(":")
+  for (var i = 0; i < quizzes.length-1; i++) {
+    if (quizzes[i]) {
+	  p = quizzes[i].split(",")
+	  quiz[i] = new quizPage(parseInt(p[0]), parseInt(p[1]), parseInt(p[2]), parseInt(p[3]), parseInt(p[4]), parseInt(p[5]), 
+	                         parseInt(p[6]), parseInt(p[7]), parseInt(p[8]), parseInt(p[9]))
+	}
+  }
+  saveQuizObjects()
+}
+
+// saving quiz object data in persistent storage
+// using a text field in the nav frame for storage
+function saveQuizObjects() {
+  var oneQuiz = new Array(), storage = ""
+  for (var i = 0; i < quiz.length; i++) {
+  	for (j in quiz[i]) {
+	  oneQuiz[oneQuiz.length] = quiz[i][j]
+	}
+    storage += (oneQuiz) ? oneQuiz.join() + ":" : ""
+	oneQuiz.length = 0
+  }
+  if (document.forms["persistence"]) {
+    document.forms["persistence"].persist.value = storage
+  }
+}
+
+
+//-->
+</script>
+<table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+   <td align="right">
+   	<p class="text-center">
+    	<a href="javascript:goNext()"><button id="btnComenzar" name="btnComenzar" onClick="#" class="btn btn-primary" type="button">Comenzar</button></a>
+        <a href="javascript:top.window.close()"><button id="btnCerrar" name="btnCerrar" onClick="#" class="btn btn-primary" type="button" style="display:none;">&nbsp;&nbsp;Cerrar&nbsp;&nbsp;</button></a>
+        <a href="javascript:goNext()"><button id="btnSiguiente" name="btnSiguiente" onClick="#" class="btn btn-primary" type="button" style="display:none;">Siguiente</button></a>
+        <a href="javascript:goNext()"><button id="btnRetro" name="btnRetro" onClick="#" class="btn btn-primary" type="button" style="display:none;">Retroalimentaci&oacute;n</button></a>
+    </p>
+   </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<FORM NAME="persistence" METHOD="post" ACTION="">
+  <INPUT TYPE="text" NAME="persist" SIZE="80">
+</FORM>
+<FORM NAME="triesForm" METHOD="post" ACTION="">
+  <INPUT TYPE="text" NAME="tries" SIZE="4" VALUE="0">
+</FORM>
+
+<!-- MAIN EFFECT -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/load.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+$(window).on('load', function() {
+	$(".tooltip-tip2, .tooltip-tip").on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		location.href = $(this).attr('href');
+	});
+});
+</script>
+
+</body>
+</html>
