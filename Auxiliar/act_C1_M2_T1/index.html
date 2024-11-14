@@ -312,10 +312,59 @@ html, body, #bg {
   if (window.newG03 == null) window.newG03 = newG03;
   if (!window.MM_initIntFns) window.MM_initIntFns = ''; window.MM_initIntFns += 'newG03();';
 //-->
-//Nueva pregunta
 
                       </script>
 <cbi-select object="G04">
+                  </interaction>
+                  <interaction name="MultCh_TrueFalse04" object="G04" template="010_Multiple Choice/010_MultCh_TrueFalse_04.agt" includesrc="interactionClass.js,elemInptClass.js">
+                    <div name="G04Layer">
+                      <h4><span name="G04question">4. Consideras que al buscar un hotel en Internet estás tomando una decisión arriesgada sin la información adecuada.                                               . </span></h4>
+                      <form name="G04Choices">
+                        <span name="G04choice1">
+                          <input name="G04RadioInp" type="radio" onclick="G04.e['choice1'].update()" />
+                          a) Verdadero<br /><span class="messageG04"></span>
+                        </span> <span name="G04choice2">
+                            <input name="G04RadioInp" type="radio" onclick="G04.e['choice2'].update()" />
+                            b) Falso<br /><span class="messageG04"></span>
+                            </span>
+                      </form>
+                      <form name="G04controls">
+                      </form>
+                    </div>
+                    <script language="JavaScript">
+<!--
+  // Copyright 1998,1999 Macromedia, Inc. All rights reserved.
+  function newG04() {
+    G04 = new MM_interaction('G04',1,0,0,null,0,3,0,'','','c','',0);
+    G04.add('inpt','choice1',0,1,0,0);
+    G04.add('inpt','choice2',0,1,1,10);
+    G04.init();
+    G04.am('segm','Segment: Check Time_',1,1);
+    G04.am('cond','Time At Limit_','G04.timeAtLimit == true',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'You are out of time\')','pm');
+    G04.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G04.setDisabled(true);\')','sp');
+    G04.am('end');
+    G04.am('segm','Segment: Correctness_',1,0);
+    G04.am('cond','Correct_01','G04.correct == true',0);
+    G04.am('actn','Call JavaScript','MM_callJS(\'getFeedback("G04", true, "¡Bien hecho! Es difícil decidir el hospedaje por Internet ya que es fácil modificar la información y fotografías por Internet, por esto debes saber que portales son seguros y verdaderos.");\')','cjs');
+    G04.am('end');
+    G04.am('cond','Incorrect_01','G04.correct == false',0);
+    G04.am('actn','Call JavaScript','MM_callJS(\'getFeedback("G04", false, "Intenta de nuevo");\')','cjs');
+    G04.am('end');
+    G04.am('cond','Unknown Response_','G04.knownResponse == false',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'Unknown Response\')','');
+    G04.am('end');
+    G04.am('segm','Segment: Check Tries_',1,1);
+    G04.am('cond','Tries At Limit_','G04.triesAtLimit == true',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'You are out of tries\')','pm');
+    G04.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G04.setDisabled(true);\')','sp');
+    G04.am('end');
+  }
+  if (window.newG04 == null) window.newG04 = newG04;
+  if (!window.MM_initIntFns) window.MM_initIntFns = ''; window.MM_initIntFns += 'newG04();';
+//-->
+                      </script>
+<cbi-select object="G05">
                   </interaction>
                  
                 </section>
