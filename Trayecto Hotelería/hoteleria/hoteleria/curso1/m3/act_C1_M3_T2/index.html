@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Evaluaci&oacute;n</title>
+    <script language="JavaScript"></script>
+    <script language="JavaScript" src="scripts/behActions.js"></script>
+    <script language="JavaScript" src="scripts/behCourseBuilder.js"></script>
+    <script language="JavaScript" src="scripts/interactionClass.js"></script>
+    <script language="JavaScript" src="scripts/elemInptClass.js"></script>
+    <script language="JavaScript" src="scripts/cmi.js"></script>
+    <link href="css/general.css" rel="stylesheet" type="text/css" />
+    <link href="css/interaccion.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      //Paste the following JavaScript code into each quiz page:
+      function initPage() {
+        var navBar = parent.nav;
+        var thisQuizPage = navBar.findPage(document.URL);
+        if (thisQuizPage.completed) {
+          MM_setIntProps("G01.setDisabled(true);");
+        } else {
+          navBar.setTries(document.URL, 0);
+        }
+      }
+      function updateQuiz() {
+        parent.nav.setTries(document.URL, G01.tries);
+        parent.nav.setTimes(document.URL, G01.time, G01.timeLimit);
+        parent.nav.setScores(document.URL, G01.score);
+      }
+
+      //Deshabilitar los botones en la Evaluacion
+      // Se usan estos IDs para conservar el script del hover creado por Fireworks
+      //top.frames["nav"].document.images["btnSiguiente"].style.visibility = "hidden"; // Bot&oacute;n exit
+      top.frames["nav"].document.getElementById("btnSiguiente").style.display =
+        "inline-table";
+      top.frames["nav"].document.getElementById("btnComenzar").style.display =
+        "none";
+      top.frames["nav"].document.getElementById("btnRetro").style.display =
+        "none";
+      top.frames["nav"].document.getElementById("btnCerrar").style.display =
+        "none";
+      //document.getElementById("btnCerrar").style.display = "block";
+    </script>
+
+    <!-- Le styles -->
+
+    <link href="assets/css/loader-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/js/calendar/css/calendar.css" />
+    <link
+      rel="stylesheet"
+      href="assets/js/textEditor/src/bootstrap-wysihtml5.css"
+    />
+
+    <style type="text/css">
+      @import url(https://weloveiconfonts.com/api/?family=fontelico);
+      /* fontelico */
+      [class*="fontelico-"]:before {
+        font-family: "fontelico", sans-serif;
+      }
+      /* entypo */
+      [class*="entypo-"]:before {
+        font-family: "entypo", sans-serif;
+      }
+      /* fontawesome */
+      [class*="fontawesome-"]:before {
+        font-family: "FontAwesome", sans-serif;
+      }
+      body {
+        padding-top: 120px;
+        padding-bottom: 0;
+      }
+      #g1 {
+        width: 60%;
+      }
+      #g2 {
+        width: 60%;
+      }
+      #g3 {
+        width: 60%;
+      }
+    </style>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body,
+      #bg {
+        height: 100%;
+        width: 100%;
+      }
+      #bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+        z-index: -1;
+      }
+      #bg img {
+        width: 100%;
+        min-width: 1024px;
+        min-height: 768px;
+      }
+      #content {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+
+    <style>
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .card-title {
+        border-bottom: 1px solid #d1d1d1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .submit-button {
+        background-color: #B63B6A;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 24.5px;
+        font-weight: bold;
+        font-family: open sans condensed;
+        margin-right: 100px;
+        transition: 0.5s;
+      }
+      .submit-button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+      }
+      .card-body {
+        padding: 20px;
+        display: flex;
+      }
+      .card-instructions {
+        padding-left: 55px;
+        /* font-size: 20px; */
+      }
+      .question-section {
+        /* height: 50px; */
+        width: 50%;
+        border-right: 1px solid #d1d1d1;
+      }
+      .question-list {
+        list-style-type: decimal;
+        /* margin-right: 25px; */
+      }
+      .question-container {
+        border: 1px dashed;
+        /* display: inline; */
+        /* width: 50px; */
+        margin: 10px;
+        margin-left: 0px;
+        padding: 10px;
+      }
+      .option-container:hover {
+        transform: translateY(-5px);
+        transition: 0.1s;
+      }
+      .question {
+        list-style-type: decimal;
+        font-size: 24.5px;
+        font-weight: bold;
+        font-family: open sans condensed;
+      }
+      .options-section {
+        /* height: 50px; */
+        width: 50%;
+        border-left: 1px solid #d1d1d1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* margin: 10px; */
+      }
+      .option-container {
+        background-color: #B63B6A;
+        color: white;
+        padding: 5px;
+        transition: 0.1s;
+      }
+      .dragging {
+        opacity: 0.5;
+      }
+      .checked.correct {
+        background-color: rgba(0, 255, 0, 0.2);
+      }
+      .checked:not(.correct) {
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+      /* .correct {
+        background-color: rgba(0, 255, 0, 0.2);
+      }
+      .question-container:not(.correct) {
+        background-color: rgba(255, 0, 0, 0.2);
+      } */
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+  </head>
+
+  <body onload="MM_initInteractions();initPage()">
+    <table
+      border="0"
+      cellpadding="1"
+      cellspacing="1"
+      align="center"
+      width="90%"
+    >
+      <tr>
+        <td>
+          <!--Content-->
+          <div class="row-fluid">
+            <div class="span12">
+              <!-- LABEL -->
+              <div class="card">
+                <div class="card-title">
+                  <h1>Evaluaci&oacute;n</h1>
+                  <button class="submit-button">Evaluar</button>
+                </div>
+                <h4 class="card-instructions">
+                  Arrastra las respuestas de la derecha al recuadro adecuado
+                </h4>
+                <div class="card-body">
+                  <div class="question-section">
+                    <div class="question-container" id="question-1">
+                      <h4>
+                        Desventaja de la venta de habitaciones de hotel vía operadores de turismo.
+                      </h4>
+                    </div>
+                    <div class="question-container" id="question-2">
+                      <h4>
+                        Ventaja de tener una página web para tu hotel.
+                      </h4>
+                    </div>
+                    <div class="question-container" id="question-3">
+                      <h4>
+                        Ventaja de la venta de habitaciones de hotel vía operadores de turismo.   
+                      </h4>
+                    </div>
+                    <div class="question-container" id="question-4">
+                      <h4>
+                        Factor que debe considerarse antes de abrir una página web. </h4>
+                    </div>
+                    <div class="question-container" id="question-5">
+                      <h4>
+                        Desventaja de las ventas vía portales de viajes.   
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="options-section">
+                    <div
+                      class="option-container"
+                      id="correct-2"
+                      draggable="true"
+                    >
+                      <h4>
+                        Llegar directamente a los clientes
+                      </h4>
+                    </div>
+                    <div
+                      class="option-container"
+                      id="correct-1"
+                      draggable="true"
+                    >
+                      <h4>Márgenes menores que en las ventas directas </h4>
+                    </div>
+                    <div
+                      class="option-container"
+                      id="correct-4"
+                      draggable="true"
+                    >
+                      <h4>Consume dinero y tiempo </h4>
+                    </div>
+                    <div
+                      class="option-container"
+                      id="correct-3"
+                      draggable="true"
+                    >
+                      <h4>Menos tiempo y esfuerzo en recibir contrataciones y reservaciones  </h4>
+                    </div>
+                    <div
+                      class="option-container"
+                      id="correct-5"
+                      draggable="true"
+                    >
+                      <h4>Requiere de un monitoreo constante </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Content: Termina-->
+        </td>
+      </tr>
+    </table>
+
+    <!-- MAIN EFFECT -->
+    <script type="text/javascript">
+      const draggables = document.querySelectorAll(".option-container");
+      const questions = document.querySelectorAll(".question-container");
+      const submitButton = document.querySelector(".submit-button");
+
+      submitButton.addEventListener("click", () => {
+        let correct = 0;
+        questions.forEach((question) => {
+          if (question.classList.contains("correct")) {
+            correct++;
+          }
+          question.classList.add("checked");
+        });
+        if (correct === questions.length) {
+          console.log("Correcto");
+        } else {
+          console.log("Incorrecto");
+        }
+      });
+
+      draggables.forEach((draggable) => {
+        draggable.addEventListener("dragstart", () => {
+          draggable.classList.add("dragging");
+        });
+        draggable.addEventListener("dragend", () => {
+          draggable.classList.remove("dragging");
+        });
+      });
+
+      questions.forEach((question) => {
+        question.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          const draggable = document.querySelector(".dragging");
+          console.log("dragover");
+          if (question.classList.contains("answered")) return;
+
+          const prevQuestion = draggable.parentElement;
+          prevQuestion.classList.remove("answered");
+
+          question.appendChild(draggable);
+          question.classList.add("answered");
+
+          console.log(question.id.substr(question.id.length - 1));
+          console.log(draggable.id);
+
+          if (
+            question.id.substr(question.id.length - 1) ===
+            draggable.id.substr(draggable.id.length - 1)
+          ) {
+            prevQuestion.classList.remove("correct");
+            question.classList.add("correct");
+          } else {
+            prevQuestion.classList.remove("correct");
+            question.classList.remove("correct");
+          }
+        });
+      });
+
+      const optionsSection = document.querySelector(".options-section");
+      optionsSection.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const draggable = document.querySelector(".dragging");
+        const question = draggable.parentElement;
+        question.classList.remove("answered");
+        question.classList.remove("correct");
+        console.log("dragover");
+
+        optionsSection.appendChild(draggable);
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/load.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
